@@ -122,11 +122,24 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-visual { height: 195px; margin: 24px 0 26px; padding: 22px; border-radius: 14px; background: linear-gradient(145deg,#f5dfe6,#edd5e4); overflow: hidden; }
 .project-card.plum .project-visual { background: linear-gradient(145deg,#eadde9,#dbc6dc); }
 .project-card.blush .project-visual { background: linear-gradient(145deg,#fde9e2,#f3d3d9); }
-.agenda-preview { position: relative; display: flex; justify-content: center; align-items: center; gap: 0; padding: 12px 20px; background: linear-gradient(145deg,#f6e4ea,#e7dce8) !important; }
-.agenda-preview img { width: 31%; height: 164px; object-fit: cover; object-position: top; border: 3px solid rgba(255,255,255,.9); border-radius: 8px; box-shadow: 0 10px 22px rgba(73,31,68,.16); }
-.agenda-preview img:first-child { transform: rotate(-6deg) translateX(8px); }
-.agenda-preview img:nth-child(2) { position: relative; z-index: 2; transform: translateY(-4px); }
-.agenda-preview img:last-child { transform: rotate(6deg) translateX(-8px); }
+.agenda-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.agenda-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+  border-radius: 14px;
+  box-shadow: none;
+  transform: none !important;
+}
 .facturador-preview { position: relative; display: grid; grid-template-columns: 46px 1fr; gap: 10px; padding: 13px; color: var(--body); background: linear-gradient(145deg,#f4dfe7,#e6d5e5) !important; cursor: pointer; text-decoration: none; }
 .fp-sidebar { border-radius: 9px; padding: 10px 8px; background: rgba(108,44,100,.92); display: flex; flex-direction: column; align-items: center; gap: 11px; }
 .fp-sidebar b { width: 24px; height: 24px; border-radius: 7px; display: grid; place-items: center; background: white; color: var(--plum); font-size: 9px; }
