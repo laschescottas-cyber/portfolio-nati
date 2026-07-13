@@ -125,7 +125,7 @@ h2 em { color: var(--rose); font-weight: 500; }
 .agenda-preview {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   padding: 0;
   overflow: hidden;
   border-radius: 14px;
@@ -236,6 +236,27 @@ footer { max-width: 1280px; margin: 0 auto; padding: 28px 36px; border-top: 1px 
   .section-heading { display: block; }.section-heading > p { margin-top: 26px; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card { min-height: 570px; }
+
+  /* Agenda TuPlannersNC: misma proporción en PC y celular */
+  .agenda-preview {
+    aspect-ratio: 4 / 3;
+    margin-bottom: 22px;
+  }
+
+  .agenda-preview img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .project-card h3 {
+    font-size: 27px;
+    line-height: 1.08;
+  }
+
+  .project-description {
+    font-size: 14px;
+    line-height: 1.65;
+  }
   .skills { gap: 48px; }
   .contact h2 { font-size: 64px; }
   .contact-links { flex-direction: column; }
