@@ -124,22 +124,21 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-card.blush .project-visual { background: linear-gradient(145deg,#fde9e2,#f3d3d9); }
 .agenda-preview {
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  padding: 0;
+  height: 195px;
+  padding: 8px;
   overflow: hidden;
   border-radius: 14px;
-  background: #f7e8ee;
+  background: linear-gradient(145deg, #f6e4ea, #e7dce8);
 }
 
 .agenda-preview img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border: none;
-  border-radius: 14px;
+  border-radius: 10px;
   box-shadow: none;
   transform: none !important;
 }
@@ -237,26 +236,28 @@ footer { max-width: 1280px; margin: 0 auto; padding: 28px 36px; border-top: 1px 
   .project-grid { grid-template-columns: 1fr; }
   .project-card { min-height: 570px; }
 
-  /* Agenda TuPlannersNC: misma proporción en PC y celular */
+  /* Agenda TuPlannersNC en celular */
   .agenda-preview {
-    aspect-ratio: 4 / 3;
+    height: 235px;
+    padding: 6px;
     margin-bottom: 22px;
   }
 
   .agenda-preview img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
   .project-card h3 {
-    font-size: 27px;
+    font-size: 24px;
     line-height: 1.08;
   }
 
   .project-description {
-    font-size: 14px;
-    line-height: 1.65;
+    font-size: 13px;
+    line-height: 1.6;
   }
+
   .skills { gap: 48px; }
   .contact h2 { font-size: 64px; }
   .contact-links { flex-direction: column; }
