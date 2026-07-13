@@ -233,3 +233,30 @@ footer { max-width: 1280px; margin: 0 auto; padding: 28px 36px; border-top: 1px 
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+/* Código de presentación personal */
+.profile-code {
+  font-size: 11px;
+  line-height: 1.8;
+  white-space: pre;
+  overflow: hidden;
+  letter-spacing: -0.15px;
+}
+
+.profile-code span {
+  display: inline-block;
+  width: 16px;
+  margin-right: 2px;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 680px) {
+  .profile-code {
+    font-size: 10px;
+    line-height: 1.75;
+  }
+
+  .profile-code span {
+    width: 14px;
+    margin-right: 1px;
+  }
+}
