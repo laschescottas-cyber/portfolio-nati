@@ -124,11 +124,13 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-card.blush .project-visual { background: linear-gradient(145deg,#fde9e2,#f3d3d9); }
 .agenda-preview {
   width: 100%;
-  height: 195px;
-  padding: 8px;
+  height: auto;
+  aspect-ratio: 1402 / 1122;
+  margin: 24px 0 26px;
+  padding: 0;
   overflow: hidden;
   border-radius: 14px;
-  background: linear-gradient(145deg, #f6e4ea, #e7dce8);
+  background: #f7e8ee;
 }
 
 .agenda-preview img {
@@ -138,7 +140,7 @@ h2 em { color: var(--rose); font-weight: 500; }
   object-fit: contain;
   object-position: center;
   border: none;
-  border-radius: 10px;
+  border-radius: 14px;
   box-shadow: none;
   transform: none !important;
 }
@@ -234,30 +236,33 @@ footer { max-width: 1280px; margin: 0 auto; padding: 28px 36px; border-top: 1px 
   h2 { font-size: 51px; }
   .section-heading { display: block; }.section-heading > p { margin-top: 26px; }
   .project-grid { grid-template-columns: 1fr; }
-  .project-card { min-height: 570px; }
+  .project-card { min-height: auto; }
 
-  /* Agenda TuPlannersNC en celular */
+  /* Agenda TuPlannersNC: imagen completa también en celular */
   .agenda-preview {
-    height: 235px;
-    padding: 6px;
-    margin-bottom: 22px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1402 / 1122;
+    margin: 20px 0 22px;
+    padding: 0;
   }
 
   .agenda-preview img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
   }
 
-  .project-card h3 {
+  .project-card.blush h3 {
     font-size: 24px;
     line-height: 1.08;
   }
 
-  .project-description {
+  .project-card.blush .project-description {
     font-size: 13px;
     line-height: 1.6;
   }
-
   .skills { gap: 48px; }
   .contact h2 { font-size: 64px; }
   .contact-links { flex-direction: column; }
