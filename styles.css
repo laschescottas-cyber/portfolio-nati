@@ -123,16 +123,19 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-card.plum .project-visual { background: linear-gradient(145deg,#eadde9,#dbc6dc); }
 .project-card.blush .project-visual { background: linear-gradient(145deg,#fde9e2,#f3d3d9); }
 .agenda-preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   padding: 0;
   overflow: hidden;
+  border-radius: 14px;
+  background: #f7e8ee;
 }
 
 .agenda-preview img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
   border: none;
