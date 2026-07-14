@@ -15,4 +15,4 @@ HTML, CSS, JavaScript, Python, PHP, SQL, Git, GitHub, automatización e Intelige
 
 ## Publicación
 
-Sitio estático preparado para GitHub Pages.
+Ver portfolio https://laschescottas-cyber.github.io/portfolio-nati
