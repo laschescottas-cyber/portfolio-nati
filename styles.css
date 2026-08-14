@@ -44,9 +44,9 @@ nav a:hover { color: var(--rose); border-color: var(--rose); }
 .hero {
   width: 100%;
   max-width: none;
-  min-height: 720px;
+  min-height: 700px;
   margin: 0;
-  padding: 72px clamp(28px, 6vw, 120px) 86px;
+  padding: 58px clamp(28px, 6vw, 120px) 68px;
   display: grid;
   grid-template-columns: minmax(440px, .8fr) minmax(440px, 1.2fr);
   gap: clamp(28px, 3vw, 58px);
@@ -68,9 +68,16 @@ nav a:hover { color: var(--rose); border-color: var(--rose); }
   letter-spacing: -.055em;
 }
 .hero h1 { font-size: clamp(76px, 8vw, 116px); line-height: .78; }
-.hero-role { margin: 30px 0 0; color: #963b5b; font-size: 22px; line-height: 1.45; }
-.hero-intro { max-width: 600px; margin: 28px 0 0; font-size: 20px; line-height: 1.7; }
-.hero-actions { display: flex; gap: 16px; margin-top: 36px; }
+.hero-role { max-width: 720px; margin: 24px 0 0; color: #963b5b; font-size: 21px; line-height: 1.45; }
+.hero-intro { max-width: 700px; margin: 21px 0 0; font-size: 18px; line-height: 1.65; }
+.hero-detail { max-width: 720px; margin: 14px 0 0; color: #675463; font-size: 15px; line-height: 1.7; }
+.hero-study { max-width: 700px; margin: 12px 0 0; color: #675463; font-size: 14px; line-height: 1.65; }
+.hero-motto { margin: 15px 0 0; color: var(--ink); font: 500 24px/1.2 "Cormorant Garamond",serif; }
+.hero-motto em { color: var(--rose); }
+.hero .status { margin-top: 17px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 25px; }
+.hero-github { padding: 10px 4px; color: var(--plum); font-size: 14px; font-weight: 700; }
+.hero-github:hover { color: var(--rose); }
 .button { padding: 15px 27px; border-radius: 10px; font-size: 15px; font-weight: 700; transition: transform .2s, box-shadow .2s; }
 .button:hover { transform: translateY(-2px); }
 .button.primary { color: white; background: linear-gradient(135deg, #d65378, #6c2c64); box-shadow: 0 14px 32px rgba(108,44,100,.18); }
@@ -283,7 +290,7 @@ h2 em { color: var(--rose); font-weight: 500; }
 footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw, 120px); border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
 
 @media (min-width: 1500px) {
-  .hero { min-height: 760px; }
+  .hero { min-height: 720px; }
   .hero-copy { padding-left: 1vw; }
   .data-art { transform: scale(1.08); transform-origin: center; }
 }
@@ -302,14 +309,19 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 
 @media (max-width: 680px) {
   .site-header { height: 68px; padding: 0 20px; }
-  nav a:not(:first-child):not(:nth-child(3)) { display: none; }
+  nav a:not(:nth-child(2)):not(:nth-child(3)) { display: none; }
   nav { gap: 22px; font-size: 12px; }
   nav a { padding: 25px 0 20px; }
   .hero { min-height: auto; padding: 62px 20px 70px; }
   .hero h1 { font-size: 68px; }
   .hero-role { font-size: 16px; line-height: 1.5; }
   .hero-intro { font-size: 16px; }
+  .hero-detail { font-size: 14px; }
+  .hero-study { font-size: 13px; }
+  .hero-motto { font-size: 22px; }
+  .hero .status { width: 100%; font-size: 12px; line-height: 1.45; }
   .hero-actions { flex-direction: column; align-items: stretch; text-align: center; }
+  .hero-github { padding: 10px; }
   .data-art { height: 400px; transform: scale(.82); transform-origin: top left; width: 120%; margin-bottom: -60px; }
   .code-card { width: 305px; }
   .chart-card { width: 220px; right: -45px; }
