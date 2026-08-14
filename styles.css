@@ -130,35 +130,53 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-visual { height: 195px; margin: 24px 0 26px; padding: 22px; border-radius: 14px; background: linear-gradient(145deg,#f5dfe6,#edd5e4); overflow: hidden; }
 .project-card.plum .project-visual { background: linear-gradient(145deg,#eadde9,#dbc6dc); }
 .project-card.blush .project-visual { background: linear-gradient(145deg,#fde9e2,#f3d3d9); }
-.client-preview {
+.jn-preview {
+  position: relative;
   min-height: 285px;
   margin: 24px 0 26px;
-  padding: 42px;
-  border-radius: 14px;
+  padding: 30px 34px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  background: linear-gradient(145deg, #f9e2e8, #ead8e8);
-  color: var(--ink);
-  text-align: left;
+  gap: 8px;
+  background: linear-gradient(145deg, #f4e4e9, #e9d9e7) !important;
   overflow: hidden;
 }
-.client-monogram {
-  width: 92px;
-  height: 92px;
+.jn-preview::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  background: linear-gradient(135deg, #d65378, #6c2c64);
-  color: #fff;
-  font: 700 34px/1 "Cormorant Garamond", serif;
-  box-shadow: 0 16px 32px rgba(108,44,100,.2);
+  right: -70px;
+  top: -90px;
+  background: rgba(201,79,115,.12);
 }
-.client-preview-copy { display: grid; gap: 6px; }
-.client-preview-copy strong { font: 600 30px/1.05 "Cormorant Garamond", serif; }
-.client-preview-copy span { color: var(--muted); font-size: 14px; }
+.jn-laptop { position: relative; width: min(82%, 430px); z-index: 1; }
+.jn-laptop-screen {
+  aspect-ratio: 16 / 9;
+  padding: 8px;
+  border-radius: 13px 13px 5px 5px;
+  background: #27242a;
+  box-shadow: 0 22px 38px rgba(50,22,47,.22);
+}
+.jn-laptop-screen img { width: 100%; height: 100%; display: block; border-radius: 7px; object-fit: cover; object-position: center; }
+.jn-laptop-base { width: 114%; height: 11px; margin-left: -7%; border-radius: 2px 2px 12px 12px; background: linear-gradient(#d8d4d8,#aaa4aa); box-shadow: 0 8px 12px rgba(50,22,47,.14); }
+.jn-phone {
+  position: relative;
+  z-index: 2;
+  width: 22%;
+  min-width: 70px;
+  aspect-ratio: 9 / 18;
+  margin: 34px 0 -20px -32px;
+  padding: 6px;
+  border: 3px solid #27242a;
+  border-radius: 17px;
+  background: #27242a;
+  box-shadow: 0 18px 30px rgba(50,22,47,.26);
+}
+.jn-phone::before { content: ""; position: absolute; z-index: 2; width: 34%; height: 4px; left: 33%; top: 6px; border-radius: 5px; background: #27242a; }
+.jn-phone img { width: 100%; height: 100%; display: block; border-radius: 10px; object-fit: cover; object-position: center; }
 .project-card.blush .agenda-preview {
   width: 100%;
   height: auto !important;
@@ -284,13 +302,12 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
     min-height: auto;
     padding: 20px;
   }
-  .client-preview {
+  .jn-preview {
     min-height: 230px;
-    padding: 28px 22px;
-    gap: 16px;
+    padding: 28px 18px 22px;
   }
-  .client-monogram { width: 72px; height: 72px; font-size: 28px; }
-  .client-preview-copy strong { font-size: 24px; }
+  .jn-laptop { width: 84%; }
+  .jn-phone { min-width: 60px; margin-left: -24px; }
 
   /* Agenda TuPlannersNC en celular */
   .project-card.blush .agenda-preview {
