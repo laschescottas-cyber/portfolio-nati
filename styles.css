@@ -48,8 +48,8 @@ nav a:hover { color: var(--rose); border-color: var(--rose); }
   margin: 0;
   padding: 72px clamp(28px, 6vw, 120px) 86px;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(480px, .92fr);
-  gap: clamp(42px, 5vw, 100px);
+  grid-template-columns: minmax(440px, .8fr) minmax(440px, 1.2fr);
+  gap: clamp(28px, 3vw, 58px);
   align-items: center;
   overflow: hidden;
 }
@@ -77,7 +77,7 @@ nav a:hover { color: var(--rose); border-color: var(--rose); }
 .button.secondary { border: 1px solid #9c3d61; color: var(--ink); background: rgba(255,255,255,.55); }
 .github-mark { margin-right: 8px; color: var(--plum); }
 
-.data-art { position: relative; height: 540px; }
+.data-art { position: relative; width: min(100%, 820px); height: 540px; margin-inline: auto; }
 .glass-card {
   position: absolute;
   border: 1px solid rgba(201,79,115,.22);
@@ -113,8 +113,8 @@ pre span { color: #a88c9d; } pre b { color: #bd3d68; font-weight: 500; } pre em 
 }
 h2 { font-size: clamp(50px, 6vw, 78px); line-height: .95; }
 h2 em { color: var(--rose); font-weight: 500; }
-.about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(70px, 8vw, 160px); border-top: 1px solid var(--line); background: rgba(255,255,255,.28); }
-.about-copy { padding-top: 38px; font-size: 18px; line-height: 1.75; }
+.about { display: grid; grid-template-columns: minmax(380px, .75fr) minmax(520px, 1.25fr); gap: clamp(38px, 4vw, 78px); border-top: 1px solid var(--line); background: rgba(255,255,255,.28); }
+.about-copy { max-width: 820px; padding-top: 38px; font-size: 18px; line-height: 1.75; }
 .about-copy p { margin: 0 0 24px; }
 .status { display: inline-flex; align-items: center; gap: 10px; margin-top: 10px; padding: 10px 16px; border-radius: 30px; background: var(--blush); color: var(--plum); font-size: 13px; font-weight: 700; }
 .status span { width: 8px; height: 8px; border-radius: 50%; background: #4ca66b; box-shadow: 0 0 0 4px rgba(76,166,107,.12); }
@@ -235,7 +235,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   .data-art { transform: scale(1.08); transform-origin: center; }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   nav { gap: 20px; }
   .hero { grid-template-columns: 1fr; padding-top: 70px; }
   .data-art { margin-top: 65px; }
