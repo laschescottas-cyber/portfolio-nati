@@ -131,36 +131,14 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-card.plum .project-visual { background: linear-gradient(145deg,#eadde9,#dbc6dc); }
 .project-card.blush .project-visual { background: linear-gradient(145deg,#fde9e2,#f3d3d9); }
 .jn-preview {
-  position: relative;
-  min-height: 285px;
+  height: auto;
+  min-height: 0;
   margin: 24px 0 26px;
-  padding: 24px;
+  padding: 0;
   background: linear-gradient(145deg, #f4e4e9, #e9d9e7) !important;
   overflow: hidden;
 }
-.jn-preview::before {
-  content: "";
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  right: -70px;
-  top: -90px;
-  background: rgba(201,79,115,.12);
-}
-.jn-browser {
-  position: absolute;
-  overflow: hidden;
-  border: 1px solid rgba(50,22,47,.16);
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 20px 38px rgba(50,22,47,.22);
-}
-.jn-browser-main { z-index: 1; width: 82%; left: 5%; top: 24px; transform: rotate(-1deg); }
-.jn-browser-secondary { z-index: 2; width: 58%; right: 4%; bottom: 17px; transform: rotate(1.5deg); }
-.jn-browser-bar { height: 19px; padding: 7px 9px; display: flex; gap: 4px; background: #f7f3f5; border-bottom: 1px solid #eadde4; }
-.jn-browser-bar i { width: 5px; height: 5px; border-radius: 50%; background: #d08aa0; }
-.jn-browser img { width: 100%; aspect-ratio: 16 / 9; display: block; object-fit: cover; object-position: top center; }
+.jn-preview img { width: 100%; height: auto; display: block; object-fit: contain; border-radius: 14px; }
 .project-card.blush .agenda-preview {
   width: 100%;
   height: auto !important;
@@ -226,6 +204,8 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-links { display: flex; gap: 18px; margin-top: 23px; padding-top: 18px; border-top: 1px solid var(--line); }
 .project-links a { color: var(--plum); font-size: 12px; font-weight: 700; }
 .project-links a:hover { color: var(--rose); }
+.private-project { margin-top: 23px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--plum); font-size: 12px; font-weight: 700; }
+.private-project span { margin-right: 6px; }
 .in-progress { margin-top: 22px; padding: 28px 32px; border: 1px dashed rgba(108,44,100,.3); border-radius: 18px; display: grid; grid-template-columns: 1fr 1.4fr auto; gap: 35px; align-items: center; }
 .in-progress span { color: var(--rose); text-transform: uppercase; letter-spacing: .15em; font-size: 10px; font-weight: 700; }
 .in-progress h3 { margin: 5px 0 0; color: var(--ink); font: 600 25px/1 "Cormorant Garamond", serif; }
@@ -287,11 +267,9 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
     padding: 20px;
   }
   .jn-preview {
-    min-height: 230px;
-    padding: 18px;
+    min-height: 0;
+    padding: 0;
   }
-  .jn-browser-main { width: 88%; left: 3%; top: 20px; }
-  .jn-browser-secondary { width: 62%; right: 3%; bottom: 14px; }
 
   /* Agenda TuPlannersNC en celular */
   .project-card.blush .agenda-preview {
