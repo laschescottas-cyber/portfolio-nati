@@ -26,9 +26,10 @@ a { color: inherit; text-decoration: none; }
 
 .site-header {
   height: 88px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 36px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 clamp(28px, 6vw, 120px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,12 +42,14 @@ nav a { padding: 34px 0 29px; border-bottom: 3px solid transparent; transition: 
 nav a:hover { color: var(--rose); border-color: var(--rose); }
 
 .hero {
-  max-width: 1280px;
+  width: 100%;
+  max-width: none;
   min-height: 720px;
-  margin: 0 auto;
-  padding: 72px 36px 86px;
+  margin: 0;
+  padding: 72px clamp(28px, 6vw, 120px) 86px;
   display: grid;
-  grid-template-columns: 52% 48%;
+  grid-template-columns: minmax(0, 1.08fr) minmax(480px, .92fr);
+  gap: clamp(42px, 5vw, 100px);
   align-items: center;
   overflow: hidden;
 }
@@ -102,10 +105,15 @@ pre span { color: #a88c9d; } pre b { color: #bd3d68; font-weight: 500; } pre em 
 .stat-lines { flex: 1; display: grid; gap: 17px; }
 .stat-lines i { height: 8px; border-radius: 10px; background: linear-gradient(90deg, var(--rose) 18%, #d8b9c5 18% 70%, #f2e5e9 70%); }
 
-.section { max-width: 1280px; margin: 0 auto; padding: 110px 36px; }
+.section {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 110px clamp(28px, 6vw, 120px);
+}
 h2 { font-size: clamp(50px, 6vw, 78px); line-height: .95; }
 h2 em { color: var(--rose); font-weight: 500; }
-.about { display: grid; grid-template-columns: 1fr 1fr; gap: 110px; border-top: 1px solid var(--line); }
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(70px, 8vw, 160px); border-top: 1px solid var(--line); background: rgba(255,255,255,.28); }
 .about-copy { padding-top: 38px; font-size: 18px; line-height: 1.75; }
 .about-copy p { margin: 0 0 24px; }
 .status { display: inline-flex; align-items: center; gap: 10px; margin-top: 10px; padding: 10px 16px; border-radius: 30px; background: var(--blush); color: var(--plum); font-size: 13px; font-weight: 700; }
@@ -114,7 +122,7 @@ h2 em { color: var(--rose); font-weight: 500; }
 .projects { border-top: 1px solid var(--line); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 60px; margin-bottom: 58px; }
 .section-heading > p { max-width: 470px; color: var(--muted); line-height: 1.7; }
-.project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(410px, 1fr)); gap: 24px; }
 .project-card { min-height: 610px; padding: 25px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.58); display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s; }
 .project-card:hover { transform: translateY(-6px); box-shadow: 0 22px 50px rgba(90,35,77,.1); }
 .project-top { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
@@ -122,6 +130,35 @@ h2 em { color: var(--rose); font-weight: 500; }
 .project-visual { height: 195px; margin: 24px 0 26px; padding: 22px; border-radius: 14px; background: linear-gradient(145deg,#f5dfe6,#edd5e4); overflow: hidden; }
 .project-card.plum .project-visual { background: linear-gradient(145deg,#eadde9,#dbc6dc); }
 .project-card.blush .project-visual { background: linear-gradient(145deg,#fde9e2,#f3d3d9); }
+.client-preview {
+  min-height: 285px;
+  margin: 24px 0 26px;
+  padding: 42px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: linear-gradient(145deg, #f9e2e8, #ead8e8);
+  color: var(--ink);
+  text-align: left;
+  overflow: hidden;
+}
+.client-monogram {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  background: linear-gradient(135deg, #d65378, #6c2c64);
+  color: #fff;
+  font: 700 34px/1 "Cormorant Garamond", serif;
+  box-shadow: 0 16px 32px rgba(108,44,100,.2);
+}
+.client-preview-copy { display: grid; gap: 6px; }
+.client-preview-copy strong { font: 600 30px/1.05 "Cormorant Garamond", serif; }
+.client-preview-copy span { color: var(--muted); font-size: 14px; }
 .project-card.blush .agenda-preview {
   width: 100%;
   height: auto !important;
@@ -193,7 +230,7 @@ h2 em { color: var(--rose); font-weight: 500; }
 .in-progress p { color: var(--muted); font-size: 13px; }
 .progress-pill { padding: 9px 14px; border-radius: 20px; background: var(--blush); color: var(--plum); font-size: 11px; font-weight: 700; }
 
-.skills { display: grid; grid-template-columns: .85fr 1.15fr; gap: 120px; border-top: 1px solid var(--line); }
+.skills { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(70px, 9vw, 170px); border-top: 1px solid var(--line); background: rgba(255,255,255,.28); }
 .skills-intro { max-width: 440px; margin-top: 28px; color: var(--muted); line-height: 1.7; }
 .skill-list { border-top: 1px solid var(--line); }
 .skill-list div { display: grid; grid-template-columns: 44px 1fr 24px; align-items: center; padding: 18px 6px; border-bottom: 1px solid var(--line); }
@@ -208,7 +245,13 @@ h2 em { color: var(--rose); font-weight: 500; }
 .contact-details { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 25px; color: var(--muted); font-size: 13px; }
 .contact-details a:hover { color: var(--rose); }
 .coming-soon { color: var(--muted); font-size: 13px; }
-footer { max-width: 1280px; margin: 0 auto; padding: 28px 36px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
+footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw, 120px); border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
+
+@media (min-width: 1500px) {
+  .hero { min-height: 760px; }
+  .hero-copy { padding-left: 1vw; }
+  .data-art { transform: scale(1.08); transform-origin: center; }
+}
 
 @media (max-width: 960px) {
   nav { gap: 20px; }
@@ -241,6 +284,13 @@ footer { max-width: 1280px; margin: 0 auto; padding: 28px 36px; border-top: 1px 
     min-height: auto;
     padding: 20px;
   }
+  .client-preview {
+    min-height: 230px;
+    padding: 28px 22px;
+    gap: 16px;
+  }
+  .client-monogram { width: 72px; height: 72px; font-size: 28px; }
+  .client-preview-copy strong { font-size: 24px; }
 
   /* Agenda TuPlannersNC en celular */
   .project-card.blush .agenda-preview {
