@@ -1,17 +1,18 @@
 # Portfolio de Natalia Chescotta
 
-Portfolio profesional de Natalia Chescotta, estudiante de Ciencia de Datos e Inteligencia Artificial y desarrolladora en formación.
+Portfolio profesional de Natalia Chescotta, desarrolladora de software junior y estudiante de Ciencia de Datos e Inteligencia Artificial.
 
 ## Proyectos destacados
 
 - Mi Progreso Académico.
 - Olivas de La Rioja.
-- Agenda interactiva TuPlannersNC.
+- TuPlannersNC.
 - Chuli Facturador.
+- JN Soluciones Integrales.
 
 ## Tecnologías
 
-HTML, CSS, JavaScript, Python, PHP, SQL, Git, GitHub, automatización e Inteligencia Artificial.
+HTML, CSS, JavaScript, Python, PHP, SQL, Supabase, FastAPI, Pandas, Git, GitHub, Vercel, PWA, automatización e Inteligencia Artificial.
 
 ## Publicación
 
