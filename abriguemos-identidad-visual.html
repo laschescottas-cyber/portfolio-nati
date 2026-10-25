@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Caso de estudio de Natalia Chescotta: identidad visual y manual de marca para la propuesta académica Abriguemos a un Niño.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Abriguemos a un Niño | Caso de estudio de identidad visual">
+  <meta property="og:description" content="Identidad visual, sistema gráfico y diseño editorial para una propuesta académica de comunicación solidaria.">
+  <title>Abriguemos a un Niño | Identidad visual — Natalia Chescotta</title>
+  <link rel="stylesheet" href="styles.css?v=24">
+  <style>
+    :root{--ac-cream:#fff8ee;--ac-cacao:#673831;--ac-coral:#d45773;--ac-paper:#f6e9d8}
+    body{background:#fffaf8}
+    .case-header{display:flex;align-items:center;justify-content:space-between;padding:22px clamp(22px,7vw,120px);border-bottom:1px solid rgba(103,56,49,.12)}
+    .case-header .brand{font-size:28px}
+    .back-link{color:var(--ac-cacao);font-size:14px;font-weight:700}
+    .back-link:hover{color:var(--ac-coral)}
+    .case-main{max-width:1240px;padding:0 24px;margin:auto}
+    .case-intro{padding:clamp(50px,7vw,108px) 0 50px}
+    .case-chip{display:inline-flex;padding:9px 15px;border-radius:60px;background:#f7e3e5;color:#b83d60;font-weight:700;font-size:12px;letter-spacing:.09em}
+    .case-intro h1{font-family:"Cormorant Garamond",Georgia,serif;color:var(--ac-cacao);font-size:clamp(52px,7vw,96px);letter-spacing:-.045em;line-height:.93;margin:24px 0 20px}
+    .case-intro h1 em{color:var(--ac-coral);font-weight:500}
+    .case-intro p{max-width:830px;font-size:clamp(17px,1.6vw,21px);line-height:1.58;color:#644c49}
+    .case-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:35px}
+    .case-summary div{padding:23px;border-radius:17px;background:#fff;border:1px solid #eee0db}
+    .case-summary strong{display:block;font-size:12px;letter-spacing:.12em;color:#b53d5a;margin-bottom:9px}
+    .case-summary span{font-size:15px;line-height:1.55;color:var(--ac-cacao)}
+    .case-stage{background:linear-gradient(145deg,#f6e9d8,#f4dfe3);border-radius:30px;overflow:hidden;padding:clamp(18px,4vw,55px);border:1px solid #ebd6d0}
+    .case-stage-inner{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);align-items:center;gap:clamp(24px,4vw,70px)}
+    .case-tablet{position:relative;border:15px solid #27232a;background:#27232a;border-radius:24px;box-shadow:0 27px 50px rgba(75,35,48,.24);transform:rotate(-3deg)}
+    .case-tablet::before{content:"";position:absolute;left:-10px;top:50%;width:4px;height:4px;border-radius:50%;background:#777;z-index:3}
+    .case-tablet img{display:block;width:100%;border-radius:6px}
+    .case-phone{margin:auto;width:min(80%,240px);aspect-ratio: .55;border-radius:28px;border:12px solid #27232a;background:var(--ac-cream);box-shadow:0 23px 42px rgba(75,35,48,.23);overflow:hidden;transform:rotate(5deg)}
+    .case-phone .speaker{height:12px;width:40%;border-radius:0 0 12px 12px;background:#27232a;margin:auto}
+    .case-phone-inner{display:flex;flex-direction:column;align-items:center;height:calc(100% - 12px);padding:16px 12px;color:var(--ac-cacao)}
+    .case-phone-inner .eyebrow{font-size:9px;letter-spacing:.09em;color:#9f4f61}
+    .case-phone-inner img.palette{margin:12px 0;width:100%;height:auto;border-radius:6px}
+    .case-phone-inner h3{font-size:24px;line-height:1.1;text-align:center;color:var(--ac-cacao);font-family:"Cormorant Garamond",Georgia,serif}
+    .case-phone-inner img.logo{width:100%;margin:auto 0 5px}
+    .case-captions{display:flex;justify-content:space-between;gap:18px;padding:21px 0;color:#806364;font-size:12px;font-weight:600}
+    .case-section{padding:86px 0 0}
+    .case-section .section-kicker{margin-bottom:14px}
+    .case-section h2{font-size:clamp(40px,4.5vw,64px);line-height:1;max-width:750px}
+    .case-section .lead{font-size:18px;line-height:1.7;max-width:790px;color:#65535d;margin:24px 0 0}
+    .case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:34px}
+    .case-card{border:1px solid #ead9d0;border-radius:20px;background:#fff;padding:27px;min-height:230px}
+    .case-card .num{font-family:"Cormorant Garamond",Georgia,serif;font-size:34px;color:var(--ac-coral)}
+    .case-card h3{font-size:20px;color:var(--ac-cacao);margin:15px 0 10px}
+    .case-card p{font-size:14px;line-height:1.7;color:#765c60}
+    .case-brand-strip{margin-top:30px;display:flex;align-items:center;justify-content:center;gap:20px;border-radius:23px;padding:35px 28px;background:var(--ac-cream);border:1px solid #ead9cb}
+    .case-brand-strip img{display:block;width:min(100%,780px);max-height:150px;object-fit:contain}
+    .case-palette{display:flex;gap:12px;margin-top:24px}
+    .case-palette span{height:68px;flex:1;border-radius:14px;border:1px solid #e9d8d3}
+    .case-palette span:nth-child(1){background:#d45773}.case-palette span:nth-child(2){background:#673831}.case-palette span:nth-child(3){background:#f6e9d8}.case-palette span:nth-child(4){background:#fff8ee}.case-palette span:nth-child(5){background:#e8a4ab}
+    .case-footer{padding:65px 0 85px}
+    .case-footer p{color:#725b67;font-size:14px;line-height:1.6}
+    .case-footer a{display:inline-block;margin-top:20px}
+    @media(max-width:760px){.case-summary,.case-grid{grid-template-columns:1fr}.case-stage-inner{grid-template-columns:1fr}.case-tablet{border-width:9px;transform:none}.case-phone{width:48%;max-width:200px;border-width:8px;transform:none}.case-captions{flex-direction:column}.case-section{padding-top:60px}.case-brand-strip{padding:22px}.case-card{min-height:unset}}
+  </style>
+</head>
+<body>
+  <header class="case-header"><a class="brand" href="index.html#inicio">NC<span>.</span></a><a class="back-link" href="index.html#proyectos">← Volver al portfolio</a></header>
+  <main class="case-main">
+    <section class="case-intro">
+      <span class="case-chip">PROYECTO ACADÉMICO · IFTS N.º 12 · 2026</span>
+      <h1>Abriguemos<br><em>a un Niño.</em></h1>
+      <p>Diseño de identidad visual y sistema gráfico para una propuesta de comunicación solidaria. Una identidad cálida y reconocible, pensada para acompañar la convocatoria a tejer cuadrados y donar ovillos para mantas.</p>
+      <div class="case-summary">
+        <div><strong>MI APORTE</strong><span>Desarrollo y diseño del Manual de Identidad Visual; coordinación gráfica.</span></div>
+        <div><strong>CONTEXTO</strong><span>Proyecto grupal de la materia Medios de Comunicación.</span></div>
+        <div><strong>ENTREGABLE</strong><span>Manual de 40 láminas, sistema de marca y piezas gráficas propuestas.</span></div>
+      </div>
+    </section>
+    <section class="case-stage" aria-label="Vistas reales del manual de identidad visual">
+      <div class="case-stage-inner">
+        <div class="case-tablet"><img src="assets/projects/abriguemos-manual-real-03.webp" alt="Página real del Manual de Identidad Visual, punto de partida de la marca y logo simplificado"></div>
+        <div class="case-phone"><div class="speaker"></div><div class="case-phone-inner"><span class="eyebrow">MANUAL DE IDENTIDAD VISUAL</span><img class="palette" src="assets/projects/abriguemos-manual-real-21.webp" alt="Página real del manual con la paleta cromática de Abriguemos a un Niño"><h3>Sistema cromático</h3><img class="logo" src="assets/projects/abriguemos-logo.svg" alt="Logo de Abriguemos a un Niño"></div></div>
+      </div>
+    </section>
+    <div class="case-captions"><span>Tablet: lámina 3, punto de partida y firma simplificada.</span><span>Celular: lámina 21, paleta cromática, con el logo original.</span></div>
+    <section class="case-section">
+      <p class="section-kicker">01 · El desafío</p>
+      <h2>Dar coherencia visual a una propuesta solidaria.</h2>
+      <p class="lead">El proyecto académico plantea un Tejetón Solidario de Invierno. La comunicación debía mantener el foco en dos acciones concretas —sumarse a tejer cuadrados y donar ovillos— mediante un lenguaje visual cálido, legible y consistente.</p>
+    </section>
+    <section class="case-section">
+      <p class="section-kicker">02 · El sistema de identidad</p>
+      <h2>Una marca, múltiples aplicaciones.</h2>
+      <div class="case-grid">
+        <div class="case-card"><span class="num">01</span><h3>Firma gráfica</h3><p>Organización del isotipo de corazón tejido y el nombre de la campaña en una versión clara y reproducible.</p></div>
+        <div class="case-card"><span class="num">02</span><h3>Paleta y tipografías</h3><p>Definición de colores, contrastes, jerarquías tipográficas y reglas de uso para mantener la unidad visual.</p></div>
+        <div class="case-card"><span class="num">03</span><h3>Aplicaciones de marca</h3><p>Lineamientos para flyers, piezas digitales, recursos gráficos y comunicaciones del proyecto académico.</p></div>
+      </div>
+      <div class="case-brand-strip"><img src="assets/projects/abriguemos-logo.svg" alt="Logo original de Abriguemos a un Niño: corazón de cuadrados rosa y nombre en color cacao"></div>
+      <div class="case-palette" aria-label="Paleta cromática principal y complementaria"><span title="Rosa coral"></span><span title="Cacao"></span><span title="Crema"></span><span title="Marfil"></span><span title="Rosa suave"></span></div>
+    </section>
+    <section class="case-section">
+      <p class="section-kicker">03 · Mi contribución</p>
+      <h2>Diseño y dirección visual del manual.</h2>
+      <p class="lead">Mi participación estuvo centrada en el desarrollo y diseño del Manual de Identidad Visual y la coordinación de su sistema gráfico. El trabajo forma parte de una propuesta académica colectiva, con otras tareas y aportes de mis compañeros.</p>
+    </section>
+    <footer class="case-footer">
+      <p>Esta muestra presenta páginas seleccionadas del manual y el logo del proyecto. No es una campaña oficial ni una confirmación del evento; los documentos completos y las fotografías de terceros no se publican aquí.</p>
+      <a href="index.html#proyectos" class="button primary">← Volver a mis proyectos</a>
+    </footer>
+  </main>
+</body>
+</html>
