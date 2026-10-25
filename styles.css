@@ -1125,13 +1125,8 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 
 /* JN Soluciones Integrales — azul marino y dorado */
 .project-visual.jn-devices {
-  aspect-ratio: 4 / 3;
-  background:
-    radial-gradient(ellipse 55% 45% at 72% 30%, rgba(201,154,46,.22), transparent 70%),
-    radial-gradient(ellipse 60% 55% at 22% 85%, rgba(66,104,170,.30), transparent 70%),
-    linear-gradient(150deg, #13284a 0%, #0c1a33 60%, #091427 100%) !important;
+  aspect-ratio: 1402 / 1122;
 }
-.jn-devices .dv-label { color: #d7b25a; }
 .jn-devices .dv-laptop { left: 6%; top: 23.5%; width: 74%; }
 .jn-devices .dv-laptop-screen { background: #0d1b33; }
 .jn-devices .dv-phone { right: 6%; bottom: 8%; width: 22%; }
@@ -1140,12 +1135,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 /* Olivas de La Rioja — negro, oliva y dorado */
 .project-visual.olivas-devices {
   aspect-ratio: 1402 / 1122;
-  background:
-    radial-gradient(ellipse 50% 40% at 50% 52%, rgba(200,164,90,.20), transparent 70%),
-    radial-gradient(ellipse 60% 50% at 15% 95%, rgba(84,104,52,.35), transparent 70%),
-    linear-gradient(160deg, #1f1d16 0%, #131310 55%, #0a0a08 100%) !important;
 }
-.olivas-devices .dv-label { color: #c8a45a; }
 .olivas-devices .dv-laptop { left: 7%; top: 24.5%; width: 73%; }
 .olivas-devices .dv-laptop-screen { background: #111; }
 .olivas-devices .dv-phone { right: 5%; bottom: 6.5%; width: 23.5%; }
@@ -1185,7 +1175,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 .wide-case-copy h3 { margin: 0 0 10px; }
 .wide-case-subtitle {
   margin: 0 0 16px;
-  color: #3a4f8a;
+  color: #9b445e;
   font-size: clamp(15px, 1.45vw, 19px);
   line-height: 1.43;
   font-weight: 600;
@@ -1198,21 +1188,8 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   .wide-case-copy { padding: 6px 0 0; }
 }
 
-/* T&A Tech — azul noche con cian y violeta */
-.project-visual.tatech-devices {
-  aspect-ratio: 16 / 11;
-  background:
-    radial-gradient(ellipse 50% 45% at 72% 30%, rgba(161,124,255,.30), transparent 70%),
-    radial-gradient(ellipse 55% 50% at 18% 88%, rgba(76,221,255,.22), transparent 70%),
-    linear-gradient(150deg, #10182a 0%, #0a1020 60%, #070b16 100%) !important;
-}
-.tatech-devices .dv-label {
-  background: linear-gradient(90deg, #4cddff, #a17cff);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-.tatech-devices .dv-label::before { background: #4cddff; }
+/* T&A Tech */
+.project-visual.tatech-devices { aspect-ratio: 16 / 11; }
 .tatech-devices .dv-laptop { left: 7%; top: 19%; width: 73%; }
 .tatech-devices .dv-laptop-screen { background: #080d19; }
 .tatech-devices .dv-phone { right: 6%; bottom: 7%; width: 21%; }
@@ -1363,3 +1340,63 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   .agenda-stats strong { font-size: 27px; }
 }
 @media (prefers-reduced-motion: reduce) { .agenda-tablet, .agenda-gallery a { transition: none; } }
+
+/* Escenario común para todos los proyectos: los colores de cada marca quedan
+   dentro de las pantallas; alrededor, siempre la paleta del portfolio. */
+.project-visual.dv-stage {
+  background:
+    radial-gradient(ellipse 55% 50% at 22% 18%, rgba(255,255,255,.95), transparent 70%),
+    radial-gradient(ellipse 50% 45% at 88% 92%, rgba(201,79,115,.20), transparent 70%),
+    radial-gradient(ellipse 45% 40% at 8% 95%, rgba(108,44,100,.12), transparent 70%),
+    linear-gradient(150deg, #fbf1ee 0%, #f5e4ea 55%, #ecd9e6 100%) !important;
+  border: 1px solid rgba(108,44,100,.12);
+}
+.dv-stage::before {
+  background-image:
+    linear-gradient(rgba(108,44,100,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(108,44,100,.05) 1px, transparent 1px);
+}
+.dv-stage::after { background: rgba(90,35,77,.28); }
+.dv-stage .dv-label { color: var(--rose); }
+.dv-stage .dv-label::before { background: var(--rose); }
+.tatech-devices .dv-label { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: var(--rose); }
+.dv-laptop-lid, .dv-phone { background: linear-gradient(160deg, #3a3340, #1f1b23); }
+.olivas-thumbs li { border-color: rgba(255,255,255,.95); box-shadow: 0 1cqw 2.4cqw rgba(90,35,77,.25); }
+
+/* Chuli Facturador */
+.project-visual.chuli-devices { aspect-ratio: 1402 / 1122; }
+.chuli-devices .dv-laptop { left: 6%; top: 22%; width: 74%; }
+.chuli-devices .dv-laptop-screen, .chuli-devices .dv-phone-screen { background: #fff; }
+.chuli-devices .dv-phone { right: 6%; bottom: 8%; width: 22%; }
+
+/* Paleta de la marca de cada proyecto */
+.brand-palette {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+}
+.brand-palette span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.brand-palette div { display: flex; }
+.brand-palette i {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-left: -5px;
+  border-radius: 50%;
+  background: var(--c);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(108,44,100,.14);
+}
+.brand-palette i:first-child { margin-left: 0; }
+
+/* Proyectos en dos columnas parejas en pantallas anchas */
+@media (min-width: 901px) {
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
