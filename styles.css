@@ -645,3 +645,51 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 @media (prefers-reduced-motion: reduce) {
   .abriguemos-manual-sheet, .abriguemos-flyer-sheet { transition: none; }
 }
+
+/* Refinamiento: el foco del mockup es la identidad visual, no el tejido */
+.abriguemos-case-study .abriguemos-manual-sheet { width: 70%; left: 8%; top: 12%; height: 76%; }
+.abriguemos-case-study .abriguemos-manual-title { margin: clamp(13px,2vw,25px) 0 8px; font-size: clamp(24px,2.4vw,39px); line-height: .98; }
+.abriguemos-case-study .abriguemos-manual-logo-wrap { display: flex; align-items: center; flex: 1; width: 100%; padding: 8px 0 16px; }
+.abriguemos-case-study .abriguemos-manual-logo-wrap img { width: 100%; max-height: 125px; object-fit: contain; margin: 0; }
+.abriguemos-case-study .abriguemos-manual-motto { margin: 0 0 12px; color: #d45773; font-size: clamp(15px,1.5vw,23px); }
+.abriguemos-brand-sheet {
+  position: absolute;
+  z-index: 1;
+  width: 44%;
+  height: 71%;
+  top: 16%;
+  right: 7%;
+  transform: rotate(10deg);
+  background: #fffdf8;
+  box-shadow: 0 22px 36px rgba(71,39,36,.17);
+  border: 1px solid #ebdcca;
+  padding: clamp(12px,1.7vw,25px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(7px,.75vw,11px);
+  color: #673831;
+  transition: transform .35s ease;
+}
+.abriguemos-brand-heading { font: 700 clamp(8px,.8vw,12px)/1.3 "Manrope", sans-serif; letter-spacing: .04em; padding-bottom: 10px; border-bottom: 1px solid #e0c7b8; }
+.abriguemos-brand-label { font: 700 clamp(7px,.65vw,10px)/1.3 "Manrope", sans-serif; letter-spacing: .12em; color: #91685c; margin-top: 5px; }
+.abriguemos-color-chips { display: flex; gap: 5px; }
+.abriguemos-color-chips i { display: block; flex: 1; height: clamp(18px,2.5vw,35px); border: 1px solid #eaded6; border-radius: 100%; }
+.abriguemos-color-chips i:nth-child(1) { background: #d45773; }.abriguemos-color-chips i:nth-child(2) { background: #673831; }.abriguemos-color-chips i:nth-child(3) { background: #f6e9d8; }.abriguemos-color-chips i:nth-child(4) { background: #fff8ee; }
+.abriguemos-brand-aa { font: 600 clamp(21px,3vw,43px)/1 "Cormorant Garamond", Georgia, serif; }
+.abriguemos-brand-aa span { font: 600 clamp(9px,1.1vw,15px)/1 "Manrope", sans-serif; color: #c35f76; }
+.abriguemos-brand-pattern { display: flex; gap: 5px; margin-top: 4px; }
+.abriguemos-brand-pattern i { width: clamp(10px,1.2vw,17px); aspect-ratio: 1; display: block; border-radius: 3px; background: #d45773; }
+.abriguemos-brand-pattern i:nth-child(even) { background: #efabb4; }
+.abriguemos-brand-footer { margin-top: auto; font: 700 clamp(7px,.6vw,10px)/1.2 "Manrope", sans-serif; letter-spacing: .06em; color: #91685c; }
+@media (hover:hover) { .abriguemos-case-study:hover .abriguemos-brand-sheet { transform: translate(6px,-5px) rotate(12deg); } }
+@media (max-width: 900px) { .abriguemos-case-study .abriguemos-manual-logo-wrap img { max-height: 170px; } .abriguemos-brand-sheet { gap: 9px; } .abriguemos-brand-label { font-size: 9px; } }
+@media (max-width: 480px) {
+  .abriguemos-case-study .abriguemos-manual-sheet { width: 75%; top: 15%; left: 6%; height: 70%; }
+  .abriguemos-case-study .abriguemos-manual-title { font-size: 22px; }
+  .abriguemos-case-study .abriguemos-manual-logo-wrap { padding: 0 0 7px; }
+  .abriguemos-case-study .abriguemos-manual-logo-wrap img { max-height: 95px; }
+  .abriguemos-brand-sheet { right: 3%; top: 19%; padding: 10px; }
+  .abriguemos-brand-heading { font-size: 7px; }
+  .abriguemos-brand-label { font-size: 6px; }
+  .abriguemos-brand-footer { font-size: 6px; }
+}
