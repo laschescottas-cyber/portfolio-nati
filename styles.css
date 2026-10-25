@@ -985,22 +985,20 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   .abriguemos-lightbox .lightbox-close { right: 6px; top: -50px; }
 }
 
-/* JN Soluciones Integrales — notebook + celular con capturas reales del sitio */
-.project-visual.jn-devices, .project-visual.olivas-devices {
+/* Notebook + celular con capturas reales (JN y Olivas).
+   Todo se mide en cqw (ancho de la propia tarjeta), así la composición
+   escala igual en cualquier pantalla y con cualquier tipografía. */
+.project-visual.dv-stage {
+  container-type: inline-size;
   position: relative;
   display: block;
   isolation: isolate;
   height: auto;
-  aspect-ratio: 4 / 3;
   padding: 0;
   overflow: hidden;
   border-radius: 14px;
-  background:
-    radial-gradient(ellipse 55% 45% at 72% 30%, rgba(201,154,46,.22), transparent 70%),
-    radial-gradient(ellipse 60% 55% at 22% 85%, rgba(66,104,170,.30), transparent 70%),
-    linear-gradient(150deg, #13284a 0%, #0c1a33 60%, #091427 100%) !important;
 }
-.jn-devices::before, .olivas-devices::before {
+.dv-stage::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1008,45 +1006,63 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   background-image:
     linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-  background-size: 28px 28px;
-  mask-image: radial-gradient(ellipse at 50% 40%, #000 30%, transparent 75%);
+  background-size: 5cqw 5cqw;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 45%, #000 25%, transparent 75%);
+          mask-image: radial-gradient(ellipse at 50% 45%, #000 25%, transparent 75%);
 }
-.jn-devices::after, .olivas-devices::after {
+.dv-stage::after {
   content: "";
   position: absolute;
-  left: 8%; right: 10%; bottom: 9%;
-  height: 9%;
+  left: 8%; right: 10%; bottom: 6%;
+  height: 8%;
   border-radius: 50%;
-  background: rgba(0,0,0,.45);
-  filter: blur(18px);
+  background: rgba(0,0,0,.5);
+  filter: blur(3cqw);
   z-index: -1;
 }
-.dv-label {
+.dv-head {
   position: absolute;
-  left: 6%; top: 7.5%;
-  color: #d7b25a;
-  font: 700 clamp(8px, .72vw, 10px)/1 "Manrope", sans-serif;
+  top: 5.5cqw;
+  left: 6cqw;
+  right: 5cqw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3cqw;
+  z-index: 4;
+}
+.dv-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.4cqw;
+  margin: 0;
+  white-space: nowrap;
+  font: 700 1.75cqw/1 "Manrope", sans-serif;
   letter-spacing: .16em;
   text-transform: uppercase;
 }
+.dv-label::before {
+  content: "";
+  width: 4.5cqw;
+  height: 1px;
+  background: currentColor;
+  opacity: .7;
+}
 .dv-laptop {
   position: absolute;
-  left: 6%;
-  top: 22%;
-  width: 72%;
+  z-index: 1;
   transition: transform .4s ease;
 }
 .dv-laptop-lid {
-  padding: 2.4% 2.4% 3%;
-  border-radius: 12px 12px 4px 4px;
-  background: linear-gradient(160deg, #2b2d33, #16171b);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.1), 0 18px 30px -12px rgba(0,0,0,.6);
+  padding: 1.7cqw 1.7cqw 2.1cqw;
+  border-radius: 1.9cqw 1.9cqw .6cqw .6cqw;
+  background: linear-gradient(160deg, #2c2e34, #16171b);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.1), 0 3cqw 5cqw -2cqw rgba(0,0,0,.65);
 }
 .dv-laptop-screen {
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-radius: 3px;
-  background: #0d1b33;
+  border-radius: .5cqw;
 }
 .dv-laptop-screen img, .dv-phone-screen img {
   display: block;
@@ -1059,79 +1075,95 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   position: relative;
   width: 114%;
   margin-left: -7%;
-  height: clamp(7px, 1vw, 11px);
-  border-radius: 0 0 14px 14px / 0 0 10px 10px;
-  background: linear-gradient(180deg, #d4d6dc 0%, #a9acb4 55%, #7d8089 100%);
-  box-shadow: 0 10px 18px -6px rgba(0,0,0,.55);
+  height: 1.7cqw;
+  border-radius: 0 0 2.2cqw 2.2cqw / 0 0 1.6cqw 1.6cqw;
+  background: linear-gradient(180deg, #d9dbe0 0%, #aeb1b8 55%, #7d8089 100%);
+  box-shadow: 0 1.6cqw 3cqw -1cqw rgba(0,0,0,.6);
 }
 .dv-laptop-base::before {
   content: "";
   position: absolute;
   left: 42%; right: 42%; top: 0;
   height: 40%;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 1cqw 1cqw;
   background: rgba(0,0,0,.18);
 }
 .dv-phone {
   position: absolute;
-  right: 7%;
-  bottom: 9%;
-  width: 21%;
-  aspect-ratio: .49;
-  padding: 1.1%;
-  border-radius: clamp(14px, 1.7vw, 22px);
-  background: linear-gradient(160deg, #2b2d33, #16171b);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12), 0 22px 32px -10px rgba(0,0,0,.7);
   z-index: 2;
+  aspect-ratio: .49;
+  padding: .9cqw;
+  border-radius: 3.6cqw;
+  background: linear-gradient(160deg, #2c2e34, #16171b);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12), 0 3.5cqw 5cqw -1.5cqw rgba(0,0,0,.75);
   transition: transform .4s ease;
 }
+.dv-phone::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 2cqw;
+  left: 50%;
+  width: 28%;
+  height: 1.2cqw;
+  transform: translateX(-50%);
+  border-radius: 1cqw;
+  background: #111214;
+}
 .dv-phone-screen {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  border-radius: clamp(11px, 1.4vw, 18px);
-  background: #f6f3ee;
+  padding-top: 4.4cqw;
+  border-radius: 2.8cqw;
 }
 @media (hover: hover) {
-  .jn-devices:hover .dv-laptop, .olivas-devices:hover .dv-laptop { transform: translateY(-4px); }
-  .jn-devices:hover .dv-phone, .olivas-devices:hover .dv-phone { transform: translateY(-7px); }
+  .dv-stage:hover .dv-laptop { transform: translateY(-.7cqw); }
+  .dv-stage:hover .dv-phone { transform: translateY(-1.2cqw); }
 }
 @media (prefers-reduced-motion: reduce) { .dv-laptop, .dv-phone { transition: none; } }
 
-/* Olivas de La Rioja — paleta negra, oliva y dorada */
-.project-visual.olivas-devices {
+/* JN Soluciones Integrales — azul marino y dorado */
+.project-visual.jn-devices {
+  aspect-ratio: 4 / 3;
   background:
-    radial-gradient(ellipse 55% 45% at 70% 28%, rgba(200,164,90,.24), transparent 70%),
-    radial-gradient(ellipse 60% 55% at 20% 88%, rgba(84,104,52,.32), transparent 70%),
-    linear-gradient(150deg, #1d1c16 0%, #121210 60%, #0b0b09 100%) !important;
+    radial-gradient(ellipse 55% 45% at 72% 30%, rgba(201,154,46,.22), transparent 70%),
+    radial-gradient(ellipse 60% 55% at 22% 85%, rgba(66,104,170,.30), transparent 70%),
+    linear-gradient(150deg, #13284a 0%, #0c1a33 60%, #091427 100%) !important;
+}
+.jn-devices .dv-label { color: #d7b25a; }
+.jn-devices .dv-laptop { left: 6%; top: 23.5%; width: 74%; }
+.jn-devices .dv-laptop-screen { background: #0d1b33; }
+.jn-devices .dv-phone { right: 6%; bottom: 8%; width: 22%; }
+.jn-devices .dv-phone-screen { background: #fff; }
+
+/* Olivas de La Rioja — negro, oliva y dorado */
+.project-visual.olivas-devices {
+  aspect-ratio: 1402 / 1122;
+  background:
+    radial-gradient(ellipse 50% 40% at 50% 52%, rgba(200,164,90,.20), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 15% 95%, rgba(84,104,52,.35), transparent 70%),
+    linear-gradient(160deg, #1f1d16 0%, #131310 55%, #0a0a08 100%) !important;
 }
 .olivas-devices .dv-label { color: #c8a45a; }
+.olivas-devices .dv-laptop { left: 7%; top: 24.5%; width: 73%; }
 .olivas-devices .dv-laptop-screen { background: #111; }
-.olivas-devices .dv-phone-screen { background: #1b1b1b; }
-.project-visual.olivas-devices { aspect-ratio: 1402 / 1122; }
-.olivas-devices .dv-label { top: 9.5%; max-width: none; white-space: nowrap; line-height: 1; z-index: 3; }
-.olivas-devices .dv-laptop { left: 4%; top: 25%; width: 80%; }
-.olivas-devices .dv-phone { right: 4.5%; bottom: 7%; width: 24%; }
+.olivas-devices .dv-phone { right: 5%; bottom: 6.5%; width: 23.5%; }
+.olivas-devices .dv-phone-screen { background: #121212; }
 .olivas-thumbs {
-  position: absolute;
-  top: 5.5%;
-  right: 5%;
   display: flex;
-  gap: clamp(5px, .7vw, 9px);
+  gap: 1.5cqw;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .olivas-thumbs li {
-  width: clamp(34px, 4.4vw, 56px);
+  width: 8.6cqw;
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 50%;
-  border: 1.5px solid rgba(200,164,90,.75);
-  box-shadow: 0 6px 14px rgba(0,0,0,.45);
+  border: max(1px, .25cqw) solid rgba(200,164,90,.8);
+  box-shadow: 0 1cqw 2.4cqw rgba(0,0,0,.5);
   background: #111;
 }
 .olivas-thumbs img { display: block; width: 100%; height: 100%; object-fit: cover; }
-@media (max-width: 480px) {
-  .olivas-devices .dv-label { font-size: 7px; }
-  .olivas-thumbs li { width: 30px; }
-}
