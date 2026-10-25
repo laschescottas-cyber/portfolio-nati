@@ -1400,3 +1400,29 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 @media (min-width: 901px) {
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* TuPlannersNC: la tienda como vitrina de la marca */
+.brand-intro.brand-web {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 60px);
+  padding: clamp(22px, 3vw, 36px);
+}
+.project-visual.tuplanners-devices { aspect-ratio: 1402 / 1122; height: auto; margin: 0; }
+.tuplanners-devices .dv-laptop { left: 6%; top: 21%; width: 74%; }
+.tuplanners-devices .dv-laptop-screen, .tuplanners-devices .dv-phone-screen { background: #fff; }
+.tuplanners-devices .dv-phone { right: 6%; bottom: 8%; width: 22%; }
+.tuplanners-devices .dv-label { text-transform: none; letter-spacing: .08em; }
+.brand-web-copy { min-width: 0; }
+.brand-web-copy h3 { margin: 0 0 16px; }
+.brand-web-copy > p:not(.brand-label) { margin: 0 0 14px; color: #675463; font-size: 15.5px; line-height: 1.72; }
+.brand-web-copy .tags { margin: 18px 0 22px; }
+.brand-web .brand-actions { white-space: nowrap; }
+@media (max-width: 900px) {
+  .brand-intro.brand-web { grid-template-columns: 1fr; }
+  .brand-web .brand-actions { grid-column: auto; }
+}
+@media (max-width: 680px) {
+  .brand-intro.brand-web { padding: 19px; }
+}
