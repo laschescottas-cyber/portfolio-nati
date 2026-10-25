@@ -1220,7 +1220,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 
 /* Agenda Interactiva 2027 — producto destacado a lo ancho */
 .agenda-feature {
-  margin-top: 24px;
+  margin-bottom: 24px;
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(300px, .88fr);
   column-gap: clamp(30px, 4vw, 64px);
