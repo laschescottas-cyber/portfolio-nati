@@ -453,3 +453,29 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
     line-height: 1.58 !important;
   }
 }
+
+/* Caso de estudio académico Abriguemos a un Niño: vista conceptual sin fotografías de terceros */
+.abriguemos-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 220px;
+  padding: 26px 14px;
+  margin: 24px 0 26px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #fff8ee 8%, #f6e9d8 100%);
+  border: 1px solid rgba(103,56,49,.15);
+  color: #673831;
+  text-align: center;
+}
+.abriguemos-preview-heart {
+  font: 700 84px/1 Georgia, serif;
+  color: #d45773;
+  text-shadow: 5px 6px 0 rgba(103,56,49,.08);
+}
+.abriguemos-preview-copy { display: flex; flex-direction: column; gap: 5px; align-items: center; }
+.abriguemos-preview-copy span { font-size: 12px; font-weight: 600; }
+.abriguemos-preview-copy strong { font: 600 clamp(24px,2.6vw,34px)/1.1 'Cormorant Garamond', Georgia, serif; }
