@@ -1217,3 +1217,149 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 .tatech-devices .dv-laptop-screen { background: #080d19; }
 .tatech-devices .dv-phone { right: 6%; bottom: 7%; width: 21%; }
 .tatech-devices .dv-phone-screen { background: #080d19; }
+
+/* Agenda Interactiva 2027 — producto destacado a lo ancho */
+.agenda-feature {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, .88fr);
+  column-gap: clamp(30px, 4vw, 64px);
+  row-gap: clamp(26px, 3vw, 40px);
+  padding: clamp(22px, 3vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(125deg, #fffaf8 0%, #fffdfc 55%, #f7eef4 100%);
+}
+.agenda-stage {
+  container-type: inline-size;
+  position: relative;
+  display: block;
+  isolation: isolate;
+  aspect-ratio: 1.32;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(108,44,100,.12);
+  background:
+    radial-gradient(ellipse 55% 45% at 30% 25%, rgba(255,255,255,.9), transparent 70%),
+    radial-gradient(ellipse 50% 45% at 85% 90%, rgba(201,79,115,.16), transparent 70%),
+    linear-gradient(150deg, #f8ece6 0%, #f3e1e8 55%, #e9d6e6 100%);
+}
+.agenda-stage::after {
+  content: "";
+  position: absolute;
+  left: 10%; right: 8%; bottom: 8%;
+  height: 8%;
+  border-radius: 50%;
+  background: rgba(80,35,60,.22);
+  filter: blur(3cqw);
+  z-index: -1;
+}
+.agenda-tablet {
+  position: absolute;
+  padding: 1.6cqw;
+  border-radius: 3cqw;
+  background: linear-gradient(150deg, #34303a, #1c1a20);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08), 0 3.5cqw 6cqw -2cqw rgba(70,30,55,.45);
+  transition: transform .4s ease;
+}
+.agenda-tablet-screen {
+  aspect-ratio: 1600 / 1131;
+  overflow: hidden;
+  border-radius: 1.3cqw;
+  background: #fbf6f4;
+}
+.agenda-tablet-screen img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.agenda-tablet-back { left: 6%; top: 8%; width: 58%; transform: rotate(-6deg); opacity: .96; }
+.agenda-tablet-front { right: 5%; bottom: 9%; width: 70%; transform: rotate(3deg); z-index: 2; }
+.agenda-pen {
+  position: absolute;
+  z-index: 3;
+  right: 7%;
+  bottom: 7.5%;
+  width: 32%;
+  height: 1.5cqw;
+  border-radius: 1cqw;
+  background: linear-gradient(180deg, #f5f3f1, #d9d4d0);
+  box-shadow: 0 1cqw 2cqw rgba(70,30,55,.3);
+  transform: rotate(-14deg);
+  transform-origin: right center;
+}
+.agenda-pen::after {
+  content: "";
+  position: absolute;
+  left: -2.4cqw; top: 0;
+  border-style: solid;
+  border-width: .75cqw 2.5cqw .75cqw 0;
+  border-color: transparent #c9c2bd transparent transparent;
+}
+@media (hover: hover) {
+  .agenda-stage:hover .agenda-tablet-front { transform: translateY(-.8cqw) rotate(2deg); }
+  .agenda-stage:hover .agenda-tablet-back { transform: translateY(-.5cqw) rotate(-7deg); }
+}
+.agenda-copy { align-self: center; min-width: 0; }
+.agenda-copy h3 { margin: 0; color: var(--ink); font: 600 clamp(34px, 3.4vw, 50px)/1.02 "Cormorant Garamond", serif; letter-spacing: -.02em; }
+.agenda-subtitle { margin: 12px 0 14px; color: #9b445e; font-size: clamp(15px, 1.35vw, 18px); line-height: 1.45; font-weight: 600; }
+.agenda-copy > p:not(.product-type):not(.agenda-subtitle) { margin: 0; color: #675463; font-size: 15px; line-height: 1.72; }
+.agenda-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0;
+  padding: 0;
+  list-style: none;
+}
+.agenda-stats li {
+  padding: 14px 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,.75);
+}
+.agenda-stats strong { display: block; color: var(--rose); font: 600 32px/1 "Cormorant Garamond", serif; }
+.agenda-stats span { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.35; }
+.agenda-gallery { grid-column: 1 / -1; min-width: 0; padding-top: clamp(22px, 2.6vw, 32px); border-top: 1px solid var(--line); }
+.agenda-gallery-title { margin: 0 0 16px; color: var(--rose); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.agenda-gallery ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(12px, 1.5vw, 20px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.agenda-gallery li { min-width: 0; }
+.agenda-gallery a {
+  display: block;
+  aspect-ratio: 1600 / 1131;
+  overflow: hidden;
+  border-radius: 9px;
+  border: 1px solid rgba(108,44,100,.12);
+  background: #fbf6f4;
+  box-shadow: 0 1px 2px rgba(80,35,60,.06), 0 12px 24px -14px rgba(80,35,60,.35);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.agenda-gallery img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.agenda-gallery li p { margin: 10px 2px 0; color: var(--ink); font-size: 13px; font-weight: 600; }
+.agenda-gallery a:focus-visible, .agenda-stage:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
+@media (hover: hover) {
+  .agenda-gallery a:hover { transform: translateY(-4px); box-shadow: 0 1px 2px rgba(80,35,60,.06), 0 20px 30px -14px rgba(80,35,60,.4); }
+}
+@media (max-width: 900px) {
+  .agenda-feature { grid-template-columns: 1fr; }
+  .agenda-gallery ol { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .agenda-feature { padding: 19px; }
+  .agenda-gallery ol {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    margin: 0 -19px;
+    padding: 4px 19px 14px;
+    scrollbar-width: none;
+  }
+  .agenda-gallery ol::-webkit-scrollbar { display: none; }
+  .agenda-gallery li { flex: 0 0 72%; scroll-snap-align: start; }
+  .agenda-stats strong { font-size: 27px; }
+}
+@media (prefers-reduced-motion: reduce) { .agenda-tablet, .agenda-gallery a { transition: none; } }
