@@ -986,7 +986,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 }
 
 /* JN Soluciones Integrales — notebook + celular con capturas reales del sitio */
-.project-visual.jn-devices {
+.project-visual.jn-devices, .project-visual.olivas-devices {
   position: relative;
   display: block;
   isolation: isolate;
@@ -1000,7 +1000,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
     radial-gradient(ellipse 60% 55% at 22% 85%, rgba(66,104,170,.30), transparent 70%),
     linear-gradient(150deg, #13284a 0%, #0c1a33 60%, #091427 100%) !important;
 }
-.jn-devices::before {
+.jn-devices::before, .olivas-devices::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1011,7 +1011,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   background-size: 28px 28px;
   mask-image: radial-gradient(ellipse at 50% 40%, #000 30%, transparent 75%);
 }
-.jn-devices::after {
+.jn-devices::after, .olivas-devices::after {
   content: "";
   position: absolute;
   left: 8%; right: 10%; bottom: 9%;
@@ -1021,7 +1021,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   filter: blur(18px);
   z-index: -1;
 }
-.jn-devices-label {
+.dv-label {
   position: absolute;
   left: 6%; top: 7.5%;
   color: #d7b25a;
@@ -1029,33 +1029,33 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   letter-spacing: .16em;
   text-transform: uppercase;
 }
-.jn-laptop {
+.dv-laptop {
   position: absolute;
   left: 6%;
   top: 22%;
   width: 72%;
   transition: transform .4s ease;
 }
-.jn-laptop-lid {
+.dv-laptop-lid {
   padding: 2.4% 2.4% 3%;
   border-radius: 12px 12px 4px 4px;
   background: linear-gradient(160deg, #2b2d33, #16171b);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.1), 0 18px 30px -12px rgba(0,0,0,.6);
 }
-.jn-laptop-screen {
+.dv-laptop-screen {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border-radius: 3px;
   background: #0d1b33;
 }
-.jn-laptop-screen img, .jn-phone-screen img {
+.dv-laptop-screen img, .dv-phone-screen img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
 }
-.jn-laptop-base {
+.dv-laptop-base {
   position: relative;
   width: 114%;
   margin-left: -7%;
@@ -1064,7 +1064,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   background: linear-gradient(180deg, #d4d6dc 0%, #a9acb4 55%, #7d8089 100%);
   box-shadow: 0 10px 18px -6px rgba(0,0,0,.55);
 }
-.jn-laptop-base::before {
+.dv-laptop-base::before {
   content: "";
   position: absolute;
   left: 42%; right: 42%; top: 0;
@@ -1072,7 +1072,7 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   border-radius: 0 0 6px 6px;
   background: rgba(0,0,0,.18);
 }
-.jn-phone {
+.dv-phone {
   position: absolute;
   right: 7%;
   bottom: 9%;
@@ -1085,14 +1085,28 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   z-index: 2;
   transition: transform .4s ease;
 }
-.jn-phone-screen {
+.dv-phone-screen {
   width: 100%; height: 100%;
   overflow: hidden;
   border-radius: clamp(11px, 1.4vw, 18px);
   background: #f6f3ee;
 }
 @media (hover: hover) {
-  .jn-devices:hover .jn-laptop { transform: translateY(-4px); }
-  .jn-devices:hover .jn-phone { transform: translateY(-7px); }
+  .jn-devices:hover .dv-laptop, .olivas-devices:hover .dv-laptop { transform: translateY(-4px); }
+  .jn-devices:hover .dv-phone, .olivas-devices:hover .dv-phone { transform: translateY(-7px); }
 }
-@media (prefers-reduced-motion: reduce) { .jn-laptop, .jn-phone { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .dv-laptop, .dv-phone { transition: none; } }
+
+/* Olivas de La Rioja — paleta negra, oliva y dorada */
+.project-visual.olivas-devices {
+  background:
+    radial-gradient(ellipse 55% 45% at 70% 28%, rgba(200,164,90,.24), transparent 70%),
+    radial-gradient(ellipse 60% 55% at 20% 88%, rgba(84,104,52,.32), transparent 70%),
+    linear-gradient(150deg, #1d1c16 0%, #121210 60%, #0b0b09 100%) !important;
+}
+.olivas-devices .dv-label { color: #c8a45a; }
+.olivas-devices .dv-laptop-screen { background: #111; }
+.olivas-devices .dv-phone-screen { background: #1b1b1b; }
+.project-visual.olivas-devices { aspect-ratio: 1402 / 1122; }
+.olivas-devices .dv-laptop { top: 24%; }
+.olivas-devices .dv-phone { bottom: 10%; }
