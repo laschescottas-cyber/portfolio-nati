@@ -8,7 +8,7 @@
   <meta property="og:title" content="Abriguemos a un Niño | Caso de estudio de identidad visual">
   <meta property="og:description" content="Identidad visual, sistema gráfico y diseño editorial para una propuesta académica de comunicación solidaria.">
   <title>Abriguemos a un Niño | Identidad visual — Natalia Chescotta</title>
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="styles.css?v=26">
   <style>
     :root{--ac-cream:#fff8ee;--ac-cacao:#673831;--ac-coral:#d45773;--ac-paper:#f6e9d8}
     body{background:#fffaf8}
@@ -27,17 +27,15 @@
     .case-summary strong{display:block;font-size:12px;letter-spacing:.12em;color:#b53d5a;margin-bottom:9px}
     .case-summary span{font-size:15px;line-height:1.55;color:var(--ac-cacao)}
     .case-stage{background:linear-gradient(145deg,#f6e9d8,#f4dfe3);border-radius:30px;overflow:hidden;padding:clamp(18px,4vw,55px);border:1px solid #ebd6d0}
-    .case-stage-inner{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);align-items:center;gap:clamp(24px,4vw,70px)}
-    .case-tablet{position:relative;border:15px solid #27232a;background:#27232a;border-radius:24px;box-shadow:0 27px 50px rgba(75,35,48,.24);transform:rotate(-3deg)}
-    .case-tablet::before{content:"";position:absolute;left:-10px;top:50%;width:4px;height:4px;border-radius:50%;background:#777;z-index:3}
-    .case-tablet img{display:block;width:100%;border-radius:6px}
-    .case-phone{margin:auto;width:min(80%,240px);aspect-ratio: .55;border-radius:28px;border:12px solid #27232a;background:var(--ac-cream);box-shadow:0 23px 42px rgba(75,35,48,.23);overflow:hidden;transform:rotate(5deg)}
-    .case-phone .speaker{height:12px;width:40%;border-radius:0 0 12px 12px;background:#27232a;margin:auto}
-    .case-phone-inner{display:flex;flex-direction:column;align-items:center;height:calc(100% - 12px);padding:16px 12px;color:var(--ac-cacao)}
-    .case-phone-inner .eyebrow{font-size:9px;letter-spacing:.09em;color:#9f4f61}
-    .case-phone-inner img.palette{margin:12px 0;width:100%;height:auto;border-radius:6px}
-    .case-phone-inner h3{font-size:24px;line-height:1.1;text-align:center;color:var(--ac-cacao);font-family:"Cormorant Garamond",Georgia,serif}
-    .case-phone-inner img.logo{width:100%;margin:auto 0 5px}
+    .case-stage-inner{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(220px,.55fr);align-items:center;gap:clamp(24px,4vw,70px)}
+    .case-stage{position:relative;isolation:isolate}
+    .case-stage::after{content:"";position:absolute;left:8%;right:10%;bottom:9%;height:9%;background:rgba(80,39,45,.2);filter:blur(26px);border-radius:50%;z-index:-1}
+    .case-tablet{position:relative;padding:clamp(9px,1.2vw,15px);border-radius:clamp(18px,2vw,28px);background:linear-gradient(145deg,#2f2a30,#1d191d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),0 2px 4px rgba(50,22,30,.12),0 30px 50px -14px rgba(70,32,42,.38);transform:rotate(-3deg)}
+    .case-tablet::before{content:"";position:absolute;left:clamp(3px,.45vw,6px);top:50%;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:#4a434b}
+    .case-tablet img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:clamp(5px,.6vw,9px)}
+    .case-phone{position:relative;margin:auto;width:min(62%,205px);aspect-ratio:.49;padding:clamp(5px,.6vw,8px);border-radius:clamp(24px,2.6vw,36px);background:linear-gradient(145deg,#2f2a30,#1d191d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),0 2px 4px rgba(50,22,30,.14),0 30px 46px -12px rgba(70,32,42,.45);transform:rotate(4deg)}
+    .case-phone .speaker{position:absolute;z-index:2;top:clamp(11px,1.2vw,16px);left:50%;width:30%;height:clamp(7px,.8vw,10px);transform:translateX(-50%);border-radius:10px;background:#1d191d}
+    .case-phone img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:clamp(19px,2.1vw,29px);background:#fff}
     .case-captions{display:flex;justify-content:space-between;gap:18px;padding:21px 0;color:#806364;font-size:12px;font-weight:600}
     .case-section{padding:86px 0 0}
     .case-section .section-kicker{margin-bottom:14px}
@@ -53,10 +51,14 @@
     .case-palette{display:flex;gap:12px;margin-top:24px}
     .case-palette span{height:68px;flex:1;border-radius:14px;border:1px solid #e9d8d3}
     .case-palette span:nth-child(1){background:#d45773}.case-palette span:nth-child(2){background:#673831}.case-palette span:nth-child(3){background:#f6e9d8}.case-palette span:nth-child(4){background:#fff8ee}.case-palette span:nth-child(5){background:#e8a4ab}
+    .case-gallery-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+    .case-gallery-head .lead{margin:0;max-width:520px;font-size:16px}
+    .case-gallery .abriguemos-gallery-grid{margin-top:0}
+    @media(max-width:640px){.case-gallery .abriguemos-gallery-grid{margin:0 -24px;padding:4px 24px 16px}}
     .case-footer{padding:65px 0 85px}
     .case-footer p{color:#725b67;font-size:14px;line-height:1.6}
     .case-footer a{display:inline-block;margin-top:20px}
-    @media(max-width:760px){.case-summary,.case-grid{grid-template-columns:1fr}.case-stage-inner{grid-template-columns:1fr}.case-tablet{border-width:9px;transform:none}.case-phone{width:48%;max-width:200px;border-width:8px;transform:none}.case-captions{flex-direction:column}.case-section{padding-top:60px}.case-brand-strip{padding:22px}.case-card{min-height:unset}}
+    @media(max-width:760px){.case-summary,.case-grid{grid-template-columns:1fr}.case-stage-inner{grid-template-columns:1fr}.case-tablet{transform:none}.case-phone{width:52%;max-width:220px;transform:none}.case-captions{flex-direction:column}.case-section{padding-top:60px}.case-brand-strip{padding:22px}.case-card{min-height:unset}}
   </style>
 </head>
 <body>
@@ -74,11 +76,56 @@
     </section>
     <section class="case-stage" aria-label="Vistas reales del manual de identidad visual">
       <div class="case-stage-inner">
-        <div class="case-tablet"><img src="assets/projects/abriguemos-manual-real-03.webp" alt="Página real del Manual de Identidad Visual, punto de partida de la marca y logo simplificado"></div>
-        <div class="case-phone"><div class="speaker"></div><div class="case-phone-inner"><span class="eyebrow">MANUAL DE IDENTIDAD VISUAL</span><img class="palette" src="assets/projects/abriguemos-manual-real-21.webp" alt="Página real del manual con la paleta cromática de Abriguemos a un Niño"><h3>Sistema cromático</h3><img class="logo" src="assets/projects/abriguemos-logo.svg" alt="Logo de Abriguemos a un Niño"></div></div>
+        <div class="case-tablet"><img src="assets/projects/abriguemos-mockup-tablet-isotipo.webp" width="1600" height="900" alt="Página 15 del Manual de Identidad Visual: isotipo de corazón tejido, construido con módulos cuadrados"></div>
+        <div class="case-phone"><div class="speaker"></div><img src="assets/projects/abriguemos-mockup-phone-historia.webp" width="640" height="1195" alt="Historia de Instagram diseñada en la página 32 del manual, con fotografía, logo y llamados a la acción"></div>
       </div>
     </section>
-    <div class="case-captions"><span>Tablet: lámina 3, punto de partida y firma simplificada.</span><span>Celular: lámina 21, paleta cromática, con el logo original.</span></div>
+    <div class="case-captions"><span>Tablet: lámina 15, isotipo de corazón tejido.</span><span>Celular: historia de Instagram, lámina 32 · Aplicaciones digitales.</span></div>
+    <section class="case-section case-gallery">
+      <p class="section-kicker">El manual por dentro</p>
+      <div class="case-gallery-head">
+        <h2>40 páginas · 6 capítulos.</h2>
+        <p class="lead">Fundamento, sistema de marca, color y tipografía, universo gráfico, aplicaciones y validación. Una selección de páginas reales del documento.</p>
+      </div>
+      <ol class="abriguemos-gallery-grid">
+              <li class="abriguemos-page is-feature">
+                <a href="assets/projects/abriguemos-manual-p01-portada-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 01 · Portada">
+                  <img src="assets/projects/abriguemos-manual-p01-portada-800.webp" srcset="assets/projects/abriguemos-manual-p01-portada-800.webp 800w, assets/projects/abriguemos-manual-p01-portada-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 60vw" width="1600" height="900" alt="Portada del Manual de Identidad Visual, edición 2026" loading="lazy" decoding="async">
+                </a>
+                <p><span>01</span>Portada</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p10-logo-principal-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 10 · Logo principal">
+                  <img src="assets/projects/abriguemos-manual-p10-logo-principal-800.webp" srcset="assets/projects/abriguemos-manual-p10-logo-principal-800.webp 800w, assets/projects/abriguemos-manual-p10-logo-principal-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: logo principal, isotipo de corazón tejido y nombre" loading="lazy" decoding="async">
+                </a>
+                <p><span>10</span>Logo principal</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p11-construccion-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 11 · Construcción de marca">
+                  <img src="assets/projects/abriguemos-manual-p11-construccion-800.webp" srcset="assets/projects/abriguemos-manual-p11-construccion-800.webp 800w, assets/projects/abriguemos-manual-p11-construccion-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: construcción del isotipo sobre retícula modular" loading="lazy" decoding="async">
+                </a>
+                <p><span>11</span>Construcción de marca</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p21-paleta-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 21 · Paleta cromática">
+                  <img src="assets/projects/abriguemos-manual-p21-paleta-800.webp" srcset="assets/projects/abriguemos-manual-p21-paleta-800.webp 800w, assets/projects/abriguemos-manual-p21-paleta-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: paleta de color con valores HEX, RGB y CMYK" loading="lazy" decoding="async">
+                </a>
+                <p><span>21</span>Paleta cromática</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p23-tipografias-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 23 · Tipografías">
+                  <img src="assets/projects/abriguemos-manual-p23-tipografias-800.webp" srcset="assets/projects/abriguemos-manual-p23-tipografias-800.webp 800w, assets/projects/abriguemos-manual-p23-tipografias-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: familias tipográficas y sus usos" loading="lazy" decoding="async">
+                </a>
+                <p><span>23</span>Tipografías</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p32-aplicaciones-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 32 · Aplicaciones de marca">
+                  <img src="assets/projects/abriguemos-manual-p32-aplicaciones-800.webp" srcset="assets/projects/abriguemos-manual-p32-aplicaciones-800.webp 800w, assets/projects/abriguemos-manual-p32-aplicaciones-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: aplicaciones digitales en historias, publicaciones y foto de perfil" loading="lazy" decoding="async">
+                </a>
+                <p><span>32</span>Aplicaciones de marca</p>
+              </li>
+            </ol>
+    </section>
     <section class="case-section">
       <p class="section-kicker">01 · El desafío</p>
       <h2>Dar coherencia visual a una propuesta solidaria.</h2>
@@ -105,5 +152,27 @@
       <a href="index.html#proyectos" class="button primary">← Volver a mis proyectos</a>
     </footer>
   </main>
+  <dialog class="abriguemos-lightbox" aria-label="Página del Manual de Identidad Visual">
+    <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+    <button class="lightbox-nav prev" type="button" aria-label="Página anterior">‹</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button class="lightbox-nav next" type="button" aria-label="Página siguiente">›</button>
+  </dialog>
+  <script>
+  (() => {
+    const links = [...document.querySelectorAll('.abriguemos-gallery-grid a')];
+    const box = document.querySelector('.abriguemos-lightbox');
+    if (!links.length || !box || typeof box.showModal !== 'function') return;
+    const img = box.querySelector('img'), cap = box.querySelector('figcaption');
+    let i = 0;
+    const show = n => { i = (n + links.length) % links.length; const a = links[i]; img.src = a.href; img.alt = a.querySelector('img').alt; cap.textContent = a.dataset.caption; };
+    links.forEach((a, n) => a.addEventListener('click', e => { e.preventDefault(); show(n); box.showModal(); }));
+    box.querySelector('.prev').onclick = () => show(i - 1);
+    box.querySelector('.next').onclick = () => show(i + 1);
+    box.querySelector('.lightbox-close').onclick = () => box.close();
+    box.addEventListener('click', e => { if (e.target === box) box.close(); });
+    box.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') show(i - 1); if (e.key === 'ArrowRight') show(i + 1); });
+  })();
+  </script>
 </body>
 </html>

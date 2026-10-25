@@ -703,147 +703,133 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   height: auto;
   min-height: 290px;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 28% 30%, rgba(255,255,255,.85), transparent 38%),
-    linear-gradient(140deg, #f6e9d8 0%, #f4dfe3 60%, #f2d4da 100%);
+  background: linear-gradient(150deg, #fbf1e6 0%, #f6e3e2 55%, #efd3d9 100%);
   border-radius: 22px;
-  border: 1px solid rgba(103,56,49,.17);
+  border: 1px solid rgba(103,56,49,.14);
   padding: 0;
   margin: 18px 0 4px;
-}
-.abriguemos-devices::after {
-  content: "";
-  position: absolute;
-  inset: auto 6% 9% 10%;
-  height: 26px;
-  background: rgba(103,56,49,.20);
-  filter: blur(18px);
-  border-radius: 50%;
-  z-index: -1;
 }
 .abriguemos-device-glow {
   position: absolute;
   inset: 0;
+  z-index: -1;
   background:
-     radial-gradient(ellipse at 15% 30%, rgba(255,255,255,.85), transparent 38%),
-     radial-gradient(ellipse at 80% 84%, rgba(212,87,115,.19), transparent 48%);
+    radial-gradient(ellipse 60% 50% at 30% 32%, rgba(255,255,255,.75), transparent 70%),
+    radial-gradient(ellipse 45% 40% at 82% 88%, rgba(212,87,115,.16), transparent 70%);
+}
+.abriguemos-devices::after {
+  content: "";
+  position: absolute;
+  left: 9%; right: 12%; bottom: 13%;
+  height: 8%;
+  background: rgba(80,39,45,.22);
+  filter: blur(22px);
+  border-radius: 50%;
+  z-index: -1;
 }
 .abriguemos-tablet {
   position: absolute;
-  left: 5%;
-  top: 18%;
-  width: 78%;
-  aspect-ratio: 1.65;
-  border: clamp(9px,1.45vw,17px) solid #29242a;
-  border-radius: clamp(14px,1.8vw,24px);
-  transform: perspective(1100px) rotate(-7deg) rotateY(-4deg);
-  background: #252025;
-  box-shadow: 0 22px 35px rgba(80,39,51,.28), inset 0 0 0 2px rgba(255,255,255,.1);
+  left: 6%;
+  top: 13%;
+  width: 74%;
+  padding: clamp(7px, 1.05vw, 13px);
+  border-radius: clamp(16px, 1.9vw, 24px);
+  background: linear-gradient(145deg, #2f2a30, #1d191d);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.08),
+    0 2px 4px rgba(50,22,30,.12),
+    0 24px 40px -12px rgba(70,32,42,.38);
+  transform: rotate(-4deg);
   z-index: 2;
-  transition: transform .35s ease;
+  transition: transform .4s ease;
 }
 .abriguemos-tablet-camera {
   position: absolute;
-  z-index: 2;
-  top: 50%; left: -8px;
-  width: 3px; height: 3px; border-radius: 50%;
-  background: #655e66;
+  top: 50%; left: clamp(3px,.45vw,6px);
+  width: 4px; height: 4px; margin-top: -2px;
+  border-radius: 50%;
+  background: #4a434b;
 }
 .abriguemos-tablet-screen {
-  width: 100%; height: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: clamp(5px, .6vw, 8px);
   background: #fff8ee;
 }
-.abriguemos-tablet-screen img { display:block; width:100%; height:100%; object-fit:cover; }
+.abriguemos-tablet-screen img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .abriguemos-phone {
   position: absolute;
   right: 7%;
-  bottom: 15%;
-  width: 30%;
-  height: 74%;
-  max-height: 280px;
-  border: clamp(6px,.85vw,10px) solid #252027;
-  border-radius: clamp(17px,2.1vw,29px);
-  background: #272128;
-  box-shadow: 0 18px 32px rgba(80,39,51,.34);
-  transform: rotate(9deg);
+  bottom: 11%;
+  width: 24%;
+  aspect-ratio: .49;
+  padding: clamp(4px, .55vw, 7px);
+  border-radius: clamp(18px, 2.3vw, 30px);
+  background: linear-gradient(145deg, #2f2a30, #1d191d);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.08),
+    0 2px 4px rgba(50,22,30,.14),
+    0 26px 38px -10px rgba(70,32,42,.45);
+  transform: rotate(5deg);
   z-index: 3;
-  transition: transform .35s ease;
+  transition: transform .4s ease;
 }
 .abriguemos-phone-screen {
-  overflow: hidden;
   position: relative;
-  width:100%; height:100%;
-  display:flex; flex-direction:column; align-items:center;
-  padding: 18% 8% 12%;
-  border-radius: clamp(11px,1.2vw,19px);
-  background: #fff8ee;
-  color: #673831;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  border-radius: clamp(14px, 1.85vw, 24px);
+  background: #fff;
 }
+.abriguemos-phone-screen img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .abriguemos-phone-speaker {
-  position: absolute; top: 5px; left: 38%; right: 38%; height: 7px;
-  z-index: 4; border-radius: 10px; background:#252027;
+  position: absolute;
+  z-index: 4;
+  top: clamp(8px, 1vw, 13px);
+  left: 50%;
+  width: 30%;
+  height: clamp(5px, .7vw, 9px);
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background: #1d191d;
 }
-.abriguemos-phone-overline {
-  font: 700 clamp(5px,.7vw,9px)/1.3 "Manrope",sans-serif;
-  letter-spacing: .04em;
-  text-align:center;
-  color:#673831;
-}
-.abriguemos-phone-screen > img:first-of-type {
-  display:block; width: 180%; height:auto; max-width:none;
-  margin: 14% -40% 3%;
-  object-fit: cover;
-}
-.abriguemos-phone-caption {
-  font: 600 clamp(12px,1.2vw,19px)/1.1 "Cormorant Garamond",Georgia,serif;
-  margin: 5% 0 8%;
-  color:#673831;
-}
-.abriguemos-phone-swatches { display:flex; width:86%; gap:5%; }
-.abriguemos-phone-swatches i { display:block; flex:1; aspect-ratio:1; border-radius:50%; }
-.abriguemos-phone-swatches i:nth-child(1) { background:#d45773; }
-.abriguemos-phone-swatches i:nth-child(2) { background:#673831; }
-.abriguemos-phone-swatches i:nth-child(3) { background:#f6e9d8;border:1px solid #e3d4c5; }
-.abriguemos-phone-swatches i:nth-child(4) { background:#e8a4ab; }
-.abriguemos-phone-screen .abriguemos-phone-logo { width:92%; height:auto; margin:auto 0 0; }
 .abriguemos-phone-home {
-  position:absolute; height:3px; width:31%; bottom:6px; left:34%;
-  background:rgba(255,255,255,.65); border-radius:4px; z-index:4;
+  position: absolute;
+  z-index: 4;
+  bottom: clamp(7px, .9vw, 12px);
+  left: 50%;
+  width: 34%;
+  height: 3px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background: rgba(103,56,49,.35);
 }
 .abriguemos-devices-caption {
-  position:absolute;
-  left: 5%; bottom: 6%;
-  color:#673831; z-index:4;
-  letter-spacing:.12em;
-  font: 700 clamp(7px,.8vw,11px)/1 "Manrope",sans-serif;
+  position: absolute;
+  left: 6%; bottom: 5.5%;
+  z-index: 4;
+  color: #8a5f58;
+  letter-spacing: .14em;
+  font: 700 clamp(7px, .75vw, 10px)/1 "Manrope", sans-serif;
 }
 .abriguemos-case-button {
-  display:inline-flex;
-  align-items:center;
-  align-self:flex-start;
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
   margin-top: 21px;
-  width:fit-content;
+  width: fit-content;
 }
-@media (hover:hover) {
-  .abriguemos-devices:hover .abriguemos-tablet { transform: perspective(1100px) translateY(-5px) rotate(-5deg) rotateY(-4deg); }
-  .abriguemos-devices:hover .abriguemos-phone { transform: translateY(-6px) rotate(6deg); }
-}
-@media (max-width: 900px) {
-  .abriguemos-phone { max-height: none; }
-  .abriguemos-phone-overline { font-size:9px; }
-  .abriguemos-phone-caption { font-size:19px; }
+@media (hover: hover) {
+  .abriguemos-devices:hover .abriguemos-tablet { transform: translateY(-5px) rotate(-3deg); }
+  .abriguemos-devices:hover .abriguemos-phone { transform: translateY(-7px) rotate(3.5deg); }
 }
 @media (max-width: 480px) {
-  .project-card.abriguemos-case-study .abriguemos-devices { min-height: 240px; aspect-ratio:1.14; }
-  .abriguemos-tablet { left:5%; top:19%; width:79%; border-width:9px; }
-  .abriguemos-phone { width:33%; height:68%; right:4%; bottom:15%; border-width:7px; }
-  .abriguemos-phone-overline { font-size:5px; }
-  .abriguemos-phone-caption { font-size:12px; }
-  .abriguemos-devices-caption { font-size:7px; }
+  .project-card.abriguemos-case-study .abriguemos-devices { min-height: 240px; aspect-ratio: 1.12; }
+  .abriguemos-tablet { left: 4%; top: 17%; width: 78%; }
+  .abriguemos-phone { right: 5%; bottom: 13%; width: 28%; }
+  .abriguemos-devices-caption { font-size: 7px; }
 }
-@media (prefers-reduced-motion:reduce) { .abriguemos-tablet,.abriguemos-phone { transition:none; } }
+@media (prefers-reduced-motion: reduce) { .abriguemos-tablet, .abriguemos-phone { transition: none; } }
 
 /* Abriguemos a un Niño — galería de páginas reales del manual */
 .abriguemos-manual-gallery {
