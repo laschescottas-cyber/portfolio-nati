@@ -1167,3 +1167,53 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   background: #111;
 }
 .olivas-thumbs img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* Tarjeta ancha (proyecto que ocupa toda la fila): T&A Tech */
+.project-card.wide-case {
+  grid-column: 1 / -1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.14fr) minmax(300px, .86fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  column-gap: clamp(30px, 4vw, 68px);
+  row-gap: 8px;
+  padding: clamp(22px, 3vw, 36px);
+}
+.wide-case .project-top { grid-column: 1 / -1; }
+.wide-case .project-visual { grid-column: 1; grid-row: 2; margin: 18px 0 4px; }
+.wide-case-copy { grid-column: 2; grid-row: 2; align-self: center; min-width: 0; padding: 6px 4px; }
+.wide-case-copy h3 { margin: 0 0 10px; }
+.wide-case-subtitle {
+  margin: 0 0 16px;
+  color: #3a4f8a;
+  font-size: clamp(15px, 1.45vw, 19px);
+  line-height: 1.43;
+  font-weight: 600;
+}
+.wide-case .project-description { max-width: 500px; line-height: 1.65; }
+.wide-case .tags { margin-top: 20px; }
+@media (max-width: 900px) {
+  .project-card.wide-case { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .wide-case .project-top, .wide-case .project-visual, .wide-case-copy { grid-column: 1; grid-row: auto; }
+  .wide-case-copy { padding: 6px 0 0; }
+}
+
+/* T&A Tech — azul noche con cian y violeta */
+.project-visual.tatech-devices {
+  aspect-ratio: 16 / 11;
+  background:
+    radial-gradient(ellipse 50% 45% at 72% 30%, rgba(161,124,255,.30), transparent 70%),
+    radial-gradient(ellipse 55% 50% at 18% 88%, rgba(76,221,255,.22), transparent 70%),
+    linear-gradient(150deg, #10182a 0%, #0a1020 60%, #070b16 100%) !important;
+}
+.tatech-devices .dv-label {
+  background: linear-gradient(90deg, #4cddff, #a17cff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.tatech-devices .dv-label::before { background: #4cddff; }
+.tatech-devices .dv-laptop { left: 7%; top: 19%; width: 73%; }
+.tatech-devices .dv-laptop-screen { background: #080d19; }
+.tatech-devices .dv-phone { right: 6%; bottom: 7%; width: 21%; }
+.tatech-devices .dv-phone-screen { background: #080d19; }
