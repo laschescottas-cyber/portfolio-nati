@@ -984,3 +984,115 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   .abriguemos-lightbox .next { right: 6px; }
   .abriguemos-lightbox .lightbox-close { right: 6px; top: -50px; }
 }
+
+/* JN Soluciones Integrales — notebook + celular con capturas reales del sitio */
+.project-visual.jn-devices {
+  position: relative;
+  display: block;
+  isolation: isolate;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background:
+    radial-gradient(ellipse 55% 45% at 72% 30%, rgba(201,154,46,.22), transparent 70%),
+    radial-gradient(ellipse 60% 55% at 22% 85%, rgba(66,104,170,.30), transparent 70%),
+    linear-gradient(150deg, #13284a 0%, #0c1a33 60%, #091427 100%) !important;
+}
+.jn-devices::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse at 50% 40%, #000 30%, transparent 75%);
+}
+.jn-devices::after {
+  content: "";
+  position: absolute;
+  left: 8%; right: 10%; bottom: 9%;
+  height: 9%;
+  border-radius: 50%;
+  background: rgba(0,0,0,.45);
+  filter: blur(18px);
+  z-index: -1;
+}
+.jn-devices-label {
+  position: absolute;
+  left: 6%; top: 7.5%;
+  color: #d7b25a;
+  font: 700 clamp(8px, .72vw, 10px)/1 "Manrope", sans-serif;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.jn-laptop {
+  position: absolute;
+  left: 6%;
+  top: 22%;
+  width: 72%;
+  transition: transform .4s ease;
+}
+.jn-laptop-lid {
+  padding: 2.4% 2.4% 3%;
+  border-radius: 12px 12px 4px 4px;
+  background: linear-gradient(160deg, #2b2d33, #16171b);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.1), 0 18px 30px -12px rgba(0,0,0,.6);
+}
+.jn-laptop-screen {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #0d1b33;
+}
+.jn-laptop-screen img, .jn-phone-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.jn-laptop-base {
+  position: relative;
+  width: 114%;
+  margin-left: -7%;
+  height: clamp(7px, 1vw, 11px);
+  border-radius: 0 0 14px 14px / 0 0 10px 10px;
+  background: linear-gradient(180deg, #d4d6dc 0%, #a9acb4 55%, #7d8089 100%);
+  box-shadow: 0 10px 18px -6px rgba(0,0,0,.55);
+}
+.jn-laptop-base::before {
+  content: "";
+  position: absolute;
+  left: 42%; right: 42%; top: 0;
+  height: 40%;
+  border-radius: 0 0 6px 6px;
+  background: rgba(0,0,0,.18);
+}
+.jn-phone {
+  position: absolute;
+  right: 7%;
+  bottom: 9%;
+  width: 21%;
+  aspect-ratio: .49;
+  padding: 1.1%;
+  border-radius: clamp(14px, 1.7vw, 22px);
+  background: linear-gradient(160deg, #2b2d33, #16171b);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12), 0 22px 32px -10px rgba(0,0,0,.7);
+  z-index: 2;
+  transition: transform .4s ease;
+}
+.jn-phone-screen {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  border-radius: clamp(11px, 1.4vw, 18px);
+  background: #f6f3ee;
+}
+@media (hover: hover) {
+  .jn-devices:hover .jn-laptop { transform: translateY(-4px); }
+  .jn-devices:hover .jn-phone { transform: translateY(-7px); }
+}
+@media (prefers-reduced-motion: reduce) { .jn-laptop, .jn-phone { transition: none; } }
