@@ -844,3 +844,157 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
   .abriguemos-devices-caption { font-size:7px; }
 }
 @media (prefers-reduced-motion:reduce) { .abriguemos-tablet,.abriguemos-phone { transition:none; } }
+
+/* Abriguemos a un Niño — galería de páginas reales del manual */
+.abriguemos-manual-gallery {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  min-width: 0;
+  margin-top: clamp(26px, 3.4vw, 46px);
+  padding-top: clamp(24px, 3vw, 38px);
+  border-top: 1px solid rgba(103,56,49,.14);
+}
+.abriguemos-gallery-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: end;
+  column-gap: clamp(24px, 4vw, 64px);
+  margin-bottom: clamp(18px, 2.4vw, 28px);
+}
+.abriguemos-gallery-head .abriguemos-eyebrow { grid-column: 1 / -1; }
+.abriguemos-gallery-head h4 {
+  margin: 0;
+  font: 600 clamp(26px, 2.6vw, 38px)/1.05 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -.02em;
+  color: #673831;
+}
+.abriguemos-gallery-head > p:last-child {
+  margin: 0;
+  max-width: 520px;
+  justify-self: end;
+  color: #7c6678;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.abriguemos-gallery-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 1.8vw, 24px);
+}
+.abriguemos-page { display: flex; flex-direction: column; min-width: 0; }
+.abriguemos-page.is-feature { grid-column: span 2; grid-row: span 2; }
+.abriguemos-page a {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff8ee;
+  border: 1px solid rgba(103,56,49,.12);
+  box-shadow: 0 1px 2px rgba(80,39,51,.06), 0 12px 26px -14px rgba(80,39,51,.32);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.abriguemos-page.is-feature a { flex: 1; aspect-ratio: auto; min-height: 0; }
+.abriguemos-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.abriguemos-page p {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 11px 2px 0;
+  color: #673831;
+  font: 600 13px/1.3 "Manrope", sans-serif;
+  letter-spacing: .01em;
+}
+.abriguemos-page p span {
+  color: #c35f76;
+  font: 600 17px/1 "Cormorant Garamond", Georgia, serif;
+}
+.abriguemos-page a:focus-visible { outline: 2px solid #c94f73; outline-offset: 3px; }
+@media (hover: hover) {
+  .abriguemos-page a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1px 2px rgba(80,39,51,.06), 0 20px 34px -14px rgba(80,39,51,.38);
+  }
+}
+@media (max-width: 900px) {
+  .abriguemos-manual-gallery { grid-column: 1; grid-row: 4; }
+  .abriguemos-gallery-head { grid-template-columns: 1fr; row-gap: 10px; }
+  .abriguemos-gallery-head > p:last-child { justify-self: start; }
+}
+@media (max-width: 640px) {
+  .abriguemos-gallery-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 2px;
+    gap: 14px;
+    margin: 0 -18px;
+    padding: 4px 18px 16px;
+    scrollbar-width: none;
+  }
+  .abriguemos-gallery-grid::-webkit-scrollbar { display: none; }
+  .abriguemos-page, .abriguemos-page.is-feature { flex: 0 0 82%; scroll-snap-align: start; }
+  .abriguemos-page.is-feature a { flex: none; aspect-ratio: 16 / 9; }
+}
+@media (prefers-reduced-motion: reduce) { .abriguemos-page a { transition: none; } }
+
+/* Visor de páginas */
+.abriguemos-lightbox {
+  width: min(1200px, 94vw);
+  max-height: 94vh;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+.abriguemos-lightbox::backdrop { background: rgba(44,24,30,.82); backdrop-filter: blur(4px); }
+.abriguemos-lightbox figure { margin: 0; }
+.abriguemos-lightbox img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 84vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 30px 60px rgba(0,0,0,.35);
+  background: #fff8ee;
+}
+.abriguemos-lightbox figcaption {
+  margin-top: 14px;
+  text-align: center;
+  color: #fff8ee;
+  font: 600 14px/1.4 "Manrope", sans-serif;
+  letter-spacing: .04em;
+}
+.abriguemos-lightbox button {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255,248,238,.94);
+  color: #673831;
+  font: 400 28px/1 Georgia, serif;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,.22);
+}
+.abriguemos-lightbox .lightbox-close { top: -14px; right: -14px; width: 38px; height: 38px; font-size: 24px; z-index: 2; }
+.abriguemos-lightbox .lightbox-nav { top: calc(50% - 40px); }
+.abriguemos-lightbox .prev { left: -22px; }
+.abriguemos-lightbox .next { right: -22px; }
+@media (max-width: 640px) {
+  .abriguemos-lightbox .prev { left: 6px; }
+  .abriguemos-lightbox .next { right: 6px; }
+  .abriguemos-lightbox .lightbox-close { right: 6px; top: -50px; }
+}
