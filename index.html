@@ -17,36 +17,56 @@
   <meta name="twitter:description" content="Aplicaciones web, automatización y proyectos de datos desarrollados para resolver necesidades reales.">
   <meta name="twitter:image" content="https://laschescottas-cyber.github.io/portfolio-nati/assets/portfolio-preview.jpg?v=1">
   <title>Portfolio de Natalia Chescotta | Desarrollo, Datos e IA</title>
-  <link rel="stylesheet" href="styles.css?v=40">
+  <link rel="canonical" href="https://laschescottas-cyber.github.io/portfolio-nati/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="theme-color" content="#fffaf9">
+  <link rel="stylesheet" href="styles.css?v=41">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Natalia Chescotta","url":"https://laschescottas-cyber.github.io/portfolio-nati/","jobTitle":"Desarrolladora de software junior","knowsAbout":["Python","JavaScript","PHP","Desarrollo web","Automatización","Ciencia de Datos"],"sameAs":["https://github.com/laschescottas-cyber","https://www.linkedin.com/in/natalia-chescotta"]}
+  </script>
 </head>
 <body>
-  <main>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <main id="contenido">
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">NC<span>.</span></a>
       <nav aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
-        <a href="#productos-propios">Productos</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#productos-propios">Productos</a>
+        <a href="#sobre-mi">Sobre mí</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#contacto">Contacto</a>
       </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Abrir el menú de navegación">Menú ☰</summary>
+        <nav aria-label="Navegación para celulares">
+          <a href="#inicio">Inicio</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#productos-propios">Productos</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contacto">Contacto</a>
+          <a href="cv.html">Ver CV</a>
+        </nav>
+      </details>
     </header>
 
     <section class="hero" id="inicio">
       <div class="hero-copy">
         <p class="eyebrow">Mi portfolio</p>
         <h1>Natalia<br>Chescotta</h1>
-        <p class="hero-role">Desarrolladora web full stack junior · Estudiante de Ciencia de Datos e IA</p>
-        <p class="hero-intro">Diseño, programo y publico aplicaciones web completas, automatizaciones y productos digitales para resolver necesidades reales.</p>
-        <p class="hero-detail">Combino mi formación técnica con más de 17 años de experiencia administrativa y financiera, lo que me aporta rigor analítico, responsabilidad y capacidad para comprender procesos de negocio.</p>
-        <p class="hero-study">Actualmente curso la Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial en el IFTS N.º 12.</p>
+        <p class="hero-role">Desarrolladora Full Stack Junior · Python, JavaScript y automatización</p>
+        <p class="hero-intro">Desarrollo aplicaciones web y soluciones digitales que simplifican procesos reales.</p>
+        <p class="hero-detail">Combino programación, datos e inteligencia artificial con experiencia en gestión administrativa y procesos de negocio.</p>
         <p class="hero-motto">Aprender haciendo, <em>crear para resolver.</em></p>
         <div class="status"><span></span> Disponible para oportunidades trainee o junior y proyectos freelance</div>
         <div class="hero-actions">
-          <a class="button primary" href="#productos-propios">Ver productos</a>
-          <a class="button secondary" href="#proyectos">Ver proyectos</a>
-          <a class="hero-github" href="https://github.com/laschescottas-cyber?tab=repositories" target="_blank" rel="noreferrer"><span class="github-mark">●</span> GitHub ↗</a>
+          <a class="button primary" href="#proyectos">Ver proyectos</a>
+          <a class="button secondary cv-button" href="cv.html">Ver CV</a>
+          <a class="hero-github" href="https://github.com/laschescottas-cyber?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
+        <p class="hero-cta-note">¿Tenés un proyecto en mente? <a href="#contacto">Hablemos.</a></p>
       </div>
 
       <div class="data-art" aria-label="Ilustración de código y datos">
@@ -54,11 +74,11 @@
         <div class="code-card glass-card">
           <div class="window-dots"><i></i><i></i><i></i></div>
         <pre class="profile-code"><span>1</span>nati = {
-<span>2</span>  <em>"creativa"</em>,
-<span>3</span>  <em>"resolutiva"</em>,
-<span>4</span>  <em>"aprendizaje"</em>: <em>"constante"</em>,
-<span>5</span>  <em>"objetivo"</em>: <em>"crear soluciones reales"</em>
-        }
+<span>2</span>  <em>"perfil"</em>: <em>"full stack junior"</em>,
+<span>3</span>  <em>"stack"</em>: [<em>"Python"</em>, <em>"JavaScript"</em>],
+<span>4</span>  <em>"foco"</em>: <em>"resolver problemas"</em>,
+<span>5</span>  <em>"actitud"</em>: <em>"aprender creando"</em>
+        }</pre>
         </div>
         <div class="chart-card glass-card"><div class="chart-grid"><i style="left:8%;bottom:22%"></i><i style="left:17%;bottom:35%"></i><i style="left:26%;bottom:29%"></i><i style="left:35%;bottom:48%"></i><i style="left:44%;bottom:43%"></i><i style="left:53%;bottom:61%"></i><i style="left:62%;bottom:57%"></i><i style="left:71%;bottom:72%"></i><i style="left:80%;bottom:66%"></i><i style="left:89%;bottom:83%"></i></div></div>
         <div class="line-card glass-card"><div class="line-chart">⌁</div></div>
@@ -66,208 +86,31 @@
       </div>
     </section>
 
-    <section class="own-products section" id="productos-propios">
-      <div class="section-heading products-heading">
-        <div><p class="section-kicker">01 · Emprendimiento digital</p><h2>Productos digitales <em>propios</em></h2></div>
-        <p>En TuPlannersNC diseño, desarrollo, publico y comercializo aplicaciones para la organización, el estudio y el bienestar.</p>
-      </div>
-
-      <article class="brand-intro brand-web">
-        <a class="project-visual dv-stage tuplanners-devices" href="https://www.tuplannersnc.com.ar/" target="_blank" rel="noreferrer" aria-label="Visitar la tienda TuPlannersNC">
-          <div class="dv-head" aria-hidden="true"><p class="dv-label">www.tuplannersnc.com.ar</p></div>
-          <div class="dv-laptop" aria-hidden="true">
-            <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/tuplanners-web-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
-            <div class="dv-laptop-base"></div>
-          </div>
-          <div class="dv-phone" aria-hidden="true">
-            <div class="dv-phone-screen"><img src="assets/projects/tuplanners-web-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
-          </div>
-        </a>
-        <div class="brand-web-copy">
-          <p class="brand-label">Marca y plataforma digital</p>
-          <h3>TuPlannersNC<span>.</span></h3>
-          <p>Una línea de productos creados de principio a fin: desde la definición de la experiencia y el diseño de interfaz hasta la programación, la gestión de accesos, la publicación y el soporte a compradores.</p>
-          <p>También diseñé y desarrollé la tienda: catálogo de productos con precios promocionales y renovaciones, compra directa por WhatsApp, testimonios, preguntas frecuentes y SEO con datos estructurados, adaptada a computadora, tablet y celular.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>SEO</span><span>Vercel</span></div>
-          <div class="brand-actions">
-            <a class="button primary" href="https://www.tuplannersnc.com.ar/" target="_blank" rel="noreferrer">Visitar tienda ↗</a>
-            <a class="text-link" href="https://www.instagram.com/tuplannersnc" target="_blank" rel="noreferrer">Instagram ↗</a>
-          </div>
-        </div>
-      </article>
-      </div>
-
-      <article class="agenda-feature">
-        <a class="agenda-stage" href="assets/projects/agenda2027-v2-p01-portada-1600.webp" target="_blank" rel="noreferrer" data-caption="Portada" aria-label="Ver la portada de la Agenda Interactiva 2027">
-          <div class="agenda-tablet agenda-tablet-back" aria-hidden="true"><div class="agenda-tablet-screen"><img src="assets/projects/agenda2027-v2-p07-calendario-anual-800.webp" srcset="assets/projects/agenda2027-v2-p07-calendario-anual-800.webp 800w, assets/projects/agenda2027-v2-p07-calendario-anual-1600.webp 1600w" sizes="30vw" width="1600" height="1131" alt="" loading="lazy" decoding="async"></div></div>
-          <div class="agenda-tablet agenda-tablet-front"><div class="agenda-tablet-screen"><img src="assets/projects/agenda2027-v2-p01-portada-800.webp" srcset="assets/projects/agenda2027-v2-p01-portada-800.webp 800w, assets/projects/agenda2027-v2-p01-portada-1600.webp 1600w" sizes="(max-width: 900px) 80vw, 40vw" width="1600" height="1131" alt="Portada de la Agenda Interactiva 2027: collage pastel con pinceladas, papeles y corazones" loading="lazy" decoding="async"></div></div>
-          <span class="agenda-pen" aria-hidden="true"></span>
-        </a>
-        <div class="agenda-copy">
-          <p class="product-type">Planificación · Agenda digital</p>
-          <h3>Agenda Interactiva 2027</h3>
-          <p class="agenda-subtitle">Una agenda anual en PDF que se recorre con un toque, pensada para tablets y apps de anotación.</p>
-          <p>La diseñé y la programé completa: un generador en Python arma automáticamente las 481 páginas a partir de plantillas, y valida cada enlace interno. Desde el calendario anual se entra a cada mes, y desde el mes, a cada día, con accesos al día anterior y siguiente.</p>
-          <ul class="agenda-stats">
-            <li><strong>481</strong><span>páginas</span></li>
-            <li><strong>12</strong><span>carátulas ilustradas</span></li>
-            <li><strong>365</strong><span>páginas diarias</span></li>
-          </ul>
-          <div class="tags"><span>Python</span><span>Jinja2</span><span>WeasyPrint</span><span>PDF interactivo</span><span>Diseño editorial</span><span>Ilustración</span></div>
-        </div>
-        <div class="agenda-gallery" data-lightbox>
-          <p class="agenda-gallery-title">Páginas reales de la agenda</p>
-          <ol>
-              <li>
-                <a href="assets/projects/agenda2027-v2-p04-fechas-importantes-1600.webp" target="_blank" rel="noreferrer" data-caption="Fechas importantes">
-                  <img src="assets/projects/agenda2027-v2-p04-fechas-importantes-800.webp" srcset="assets/projects/agenda2027-v2-p04-fechas-importantes-800.webp 800w, assets/projects/agenda2027-v2-p04-fechas-importantes-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Fechas importantes del primer semestre: cumpleaños, aniversarios y eventos" loading="lazy" decoding="async">
-                </a>
-                <p>Fechas importantes</p>
-              </li>
-              <li>
-                <a href="assets/projects/agenda2027-v2-p09-planner-mensual-1600.webp" target="_blank" rel="noreferrer" data-caption="Planner mensual">
-                  <img src="assets/projects/agenda2027-v2-p09-planner-mensual-800.webp" srcset="assets/projects/agenda2027-v2-p09-planner-mensual-800.webp 800w, assets/projects/agenda2027-v2-p09-planner-mensual-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Planner mensual de enero: cada día lleva a su página diaria" loading="lazy" decoding="async">
-                </a>
-                <p>Planner mensual</p>
-              </li>
-              <li>
-                <a href="assets/projects/agenda2027-v2-p11-habitos-1600.webp" target="_blank" rel="noreferrer" data-caption="Control de hábitos">
-                  <img src="assets/projects/agenda2027-v2-p11-habitos-800.webp" srcset="assets/projects/agenda2027-v2-p11-habitos-800.webp 800w, assets/projects/agenda2027-v2-p11-habitos-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Rueda de hábitos mensual para colorear por día" loading="lazy" decoding="async">
-                </a>
-                <p>Control de hábitos</p>
-              </li>
-              <li>
-                <a href="assets/projects/agenda2027-v2-p12-semana-ideal-1600.webp" target="_blank" rel="noreferrer" data-caption="Semana ideal">
-                  <img src="assets/projects/agenda2027-v2-p12-semana-ideal-800.webp" srcset="assets/projects/agenda2027-v2-p12-semana-ideal-800.webp 800w, assets/projects/agenda2027-v2-p12-semana-ideal-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Planificación de la semana ideal con hábitos, humor y prioridades" loading="lazy" decoding="async">
-                </a>
-                <p>Semana ideal</p>
-              </li>
-              <li>
-                <a href="assets/projects/agenda2027-v2-p13-pagina-diaria-1600.webp" target="_blank" rel="noreferrer" data-caption="Página diaria">
-                  <img src="assets/projects/agenda2027-v2-p13-pagina-diaria-800.webp" srcset="assets/projects/agenda2027-v2-p13-pagina-diaria-800.webp 800w, assets/projects/agenda2027-v2-p13-pagina-diaria-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Página diaria con tareas, horarios y accesos al día anterior y siguiente" loading="lazy" decoding="async">
-                </a>
-                <p>Página diaria</p>
-              </li>
-          </ol>
-        </div>
-      </article>
-
-      <div class="product-showcase-grid">
-        <article class="product-showcase-card">
-          <a class="product-image" href="https://www.tuplannersnc.com.ar/#cuaderno-digital" target="_blank" rel="noreferrer" aria-label="Conocer Mi Cuaderno Digital">
-            <img src="assets/projects/mockup-mi-cuaderno-digital-v2.webp" alt="Mi Cuaderno Digital abierto en computadora, tablet y celular" loading="lazy">
-          </a>
-          <p class="product-type">Organización · Estudio</p>
-          <h3>Mi Cuaderno Digital</h3>
-          <p>Aplicación web para crear y personalizar cuadernos, organizar apuntes, escribir, dibujar y mantener el contenido sincronizado entre dispositivos.</p>
-          <div class="tags"><span>JavaScript</span><span>PWA</span><span>Supabase</span><span>UX</span></div>
-          <a class="product-link" href="https://www.tuplannersnc.com.ar/#cuaderno-digital" target="_blank" rel="noreferrer">Conocer el producto ↗</a>
-        </article>
-
-        <article class="product-showcase-card">
-          <a class="product-image" href="https://www.tuplannersnc.com.ar/#florecer-ai" target="_blank" rel="noreferrer" aria-label="Conocer Florecer AI">
-            <img src="assets/projects/mockup-florecer-ai.webp" alt="Florecer AI, diario de gratitud digital, abierto en tablet y celular" loading="lazy">
-          </a>
-          <p class="product-type">Bienestar · Inteligencia artificial</p>
-          <h3>Florecer AI</h3>
-          <p>Diario de gratitud digital con un recorrido guiado de 30 días, registro emocional, estadísticas y reflexiones personalizadas con inteligencia artificial.</p>
-          <div class="tags"><span>JavaScript</span><span>IA</span><span>Supabase</span><span>PDF</span></div>
-          <a class="product-link" href="https://www.tuplannersnc.com.ar/#florecer-ai" target="_blank" rel="noreferrer">Conocer el producto ↗</a>
-        </article>
-
-        <article class="product-showcase-card">
-          <a class="product-image" href="https://www.tuplannersnc.com.ar/#catalogo" target="_blank" rel="noreferrer" aria-label="Conocer Planner Anual 2027">
-            <img src="assets/projects/mockup-planner-anual-2026.svg" alt="Planner Anual 2027 instalado en computadora, tablet y celular" loading="lazy">
-          </a>
-          <p class="product-type">Planificación · Productividad</p>
-          <h3>Planner Anual 2027</h3>
-          <p>Aplicación instalable para organizar actividades, objetivos y pendientes de todo el año, con categorías, progreso visual, sincronización y exportaciones.</p>
-          <div class="tags"><span>JavaScript</span><span>PWA</span><span>Supabase</span><span>Responsive</span></div>
-          <a class="product-link" href="https://www.tuplannersnc.com.ar/#catalogo" target="_blank" rel="noreferrer">Conocer el producto ↗</a>
-        </article>
-      </div>
-
-    </section>
 
     <section class="projects section" id="proyectos">
       <div class="section-heading">
-        <div><p class="section-kicker">02 · Trabajo seleccionado</p><h2>Otros proyectos y <em>trabajos realizados</em></h2></div>
-        <p>Identidad visual, aplicaciones propias, automatizaciones, catálogos y sitios web desarrollados para resolver necesidades concretas.</p>
+        <div><p class="section-kicker">01 · Desarrollo y trabajos reales</p><h2>Proyectos y <em>soluciones reales</em></h2></div>
+        <p>Aplicaciones, automatizaciones y sitios web. Descubrí qué problema resuelve cada proyecto, cómo lo desarrollé y qué tecnologías utilicé.</p>
       </div>
       <div class="project-grid">
-        <article class="project-card rose abriguemos-case-study">
-          <div class="project-top"><span>01</span><p>Branding · Identidad visual · Diseño editorial</p></div>
-          <a class="project-visual abriguemos-devices" href="abriguemos-identidad-visual.html" aria-label="Abrir el caso de estudio de identidad visual de Abriguemos a un Niño">
-            <div class="abriguemos-device-glow" aria-hidden="true"></div>
-            <div class="abriguemos-tablet" aria-hidden="true">
-              <div class="abriguemos-tablet-camera"></div>
-              <div class="abriguemos-tablet-screen">
-                <img src="assets/projects/abriguemos-mockup-tablet-isotipo.webp" alt="" width="1600" height="900" decoding="async">
-              </div>
+        <article class="project-card plum">
+          <div class="project-top"><span>01</span><p>Backend · Automatización</p></div>
+          <a class="project-visual dv-stage chuli-devices" href="https://laschescottas-cyber.github.io/chuli-facturador-demo/demo/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo visual de Chuli Facturador">
+            <div class="dv-head" aria-hidden="true"><p class="dv-label">Lotes CSV · ARCA · Demo</p></div>
+            <div class="dv-laptop" aria-hidden="true">
+              <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/chuli-demo-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
+              <div class="dv-laptop-base"></div>
             </div>
-            <div class="abriguemos-phone" aria-hidden="true">
-              <div class="abriguemos-phone-speaker"></div>
-              <div class="abriguemos-phone-screen">
-                <img src="assets/projects/abriguemos-mockup-phone-historia.webp" alt="" width="640" height="1195" decoding="async">
-              </div>
-              <div class="abriguemos-phone-home"></div>
+            <div class="dv-phone" aria-hidden="true">
+              <div class="dv-phone-screen"><img src="assets/projects/chuli-demo-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
             </div>
-            <span class="abriguemos-devices-caption">MANUAL DE IDENTIDAD VISUAL · PÁGS. 15 Y 32</span>
           </a>
-          <div class="abriguemos-case-study-copy">
-            <p class="abriguemos-eyebrow">CASO DE ESTUDIO · IFTS N.º 12</p>
-            <h3>Abriguemos a un Niño</h3>
-            <p class="abriguemos-subtitle">Identidad visual y sistema gráfico para una propuesta de comunicación solidaria.</p>
-            <p class="project-description">Proyecto académico grupal para un Tejetón Solidario: cuadrados tejidos y donación de ovillos destinados a confeccionar mantas. Mi aporte fue el desarrollo y diseño del Manual de Identidad Visual —un documento de 40 páginas—, sus aplicaciones y la coordinación gráfica de la propuesta.</p>
-            <div class="tags"><span>Branding</span><span>Identidad visual</span><span>Manual de marca</span><span>Diseño editorial</span></div>
-            <a class="button primary abriguemos-case-button" href="abriguemos-identidad-visual.html">Ver caso de estudio ↗</a>
-            <div class="private-project">Proyecto académico grupal, no oficial · Muestra de portfolio</div>
-          </div>
-          <div class="abriguemos-manual-gallery">
-            <div class="abriguemos-gallery-head">
-              <p class="abriguemos-eyebrow">EL MANUAL POR DENTRO</p>
-              <h4>40 páginas · 6 capítulos</h4>
-              <p>Fundamento, sistema de marca, color y tipografía, universo gráfico, aplicaciones y validación. Una selección de páginas reales del documento.</p>
-            </div>
-            <ol class="abriguemos-gallery-grid">
-              <li class="abriguemos-page is-feature">
-                <a href="assets/projects/abriguemos-manual-p01-portada-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 01 · Portada">
-                  <img src="assets/projects/abriguemos-manual-p01-portada-800.webp" srcset="assets/projects/abriguemos-manual-p01-portada-800.webp 800w, assets/projects/abriguemos-manual-p01-portada-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 60vw" width="1600" height="900" alt="Portada del Manual de Identidad Visual, edición 2026" loading="lazy" decoding="async">
-                </a>
-                <p><span>01</span>Portada</p>
-              </li>
-              <li class="abriguemos-page">
-                <a href="assets/projects/abriguemos-manual-p10-logo-principal-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 10 · Logo principal">
-                  <img src="assets/projects/abriguemos-manual-p10-logo-principal-800.webp" srcset="assets/projects/abriguemos-manual-p10-logo-principal-800.webp 800w, assets/projects/abriguemos-manual-p10-logo-principal-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: logo principal, isotipo de corazón tejido y nombre" loading="lazy" decoding="async">
-                </a>
-                <p><span>10</span>Logo principal</p>
-              </li>
-              <li class="abriguemos-page">
-                <a href="assets/projects/abriguemos-manual-p11-construccion-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 11 · Construcción de marca">
-                  <img src="assets/projects/abriguemos-manual-p11-construccion-800.webp" srcset="assets/projects/abriguemos-manual-p11-construccion-800.webp 800w, assets/projects/abriguemos-manual-p11-construccion-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: construcción del isotipo sobre retícula modular" loading="lazy" decoding="async">
-                </a>
-                <p><span>11</span>Construcción de marca</p>
-              </li>
-              <li class="abriguemos-page">
-                <a href="assets/projects/abriguemos-manual-p21-paleta-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 21 · Paleta cromática">
-                  <img src="assets/projects/abriguemos-manual-p21-paleta-800.webp" srcset="assets/projects/abriguemos-manual-p21-paleta-800.webp 800w, assets/projects/abriguemos-manual-p21-paleta-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: paleta de color con valores HEX, RGB y CMYK" loading="lazy" decoding="async">
-                </a>
-                <p><span>21</span>Paleta cromática</p>
-              </li>
-              <li class="abriguemos-page">
-                <a href="assets/projects/abriguemos-manual-p23-tipografias-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 23 · Tipografías">
-                  <img src="assets/projects/abriguemos-manual-p23-tipografias-800.webp" srcset="assets/projects/abriguemos-manual-p23-tipografias-800.webp 800w, assets/projects/abriguemos-manual-p23-tipografias-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: familias tipográficas y sus usos" loading="lazy" decoding="async">
-                </a>
-                <p><span>23</span>Tipografías</p>
-              </li>
-              <li class="abriguemos-page">
-                <a href="assets/projects/abriguemos-manual-p32-aplicaciones-1600.webp" target="_blank" rel="noreferrer" data-caption="Pág. 32 · Aplicaciones de marca">
-                  <img src="assets/projects/abriguemos-manual-p32-aplicaciones-800.webp" srcset="assets/projects/abriguemos-manual-p32-aplicaciones-800.webp 800w, assets/projects/abriguemos-manual-p32-aplicaciones-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: aplicaciones digitales en historias, publicaciones y foto de perfil" loading="lazy" decoding="async">
-                </a>
-                <p><span>32</span>Aplicaciones de marca</p>
-              </li>
-            </ol>
-          </div>
+          <h3>Chuli Facturador</h3>
+          <p class="project-description">MVP en ambiente de homologación que procesa ventas en CSV, emite Facturas C mediante servicios de ARCA y registra comprobantes, duplicados, errores y reintentos en SQLite.</p>
+          <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#6c2c64" title="#6c2c64"></i><i style="--c:#c94f73" title="#c94f73"></i><i style="--c:#287a57" title="#287a57"></i><i style="--c:#f4f4f5" title="#f4f4f5"></i></div></div>
+          <div class="case-preview"><strong>Decisión técnica</strong><p>Separar la carga de ventas, el procesamiento de comprobantes y el registro de errores para poder identificar reintentos sin perder trazabilidad.</p></div>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Pandas</span><span>ARCA</span></div>
+          <div class="project-links"><a href="https://laschescottas-cyber.github.io/chuli-facturador-demo/demo/" target="_blank" rel="noopener noreferrer">Ver demo ↗</a><a href="casos-tecnicos.html#chuli">Cómo funciona ↗</a><a href="https://github.com/laschescottas-cyber/chuli-facturador-demo" target="_blank" rel="noopener noreferrer">Código de la demo ↗</a></div>
         </article>
         <article class="project-card rose">
           <div class="project-top"><span>02</span><p>Aplicación web · PWA</p></div>
@@ -286,7 +129,7 @@
           >
             <img
               src="assets/projects/progreso-mockup.png"
-              alt="Mockup de Mi Progreso Académico"
+              alt="Mockup de Mi Progreso Académico" loading="lazy" decoding="async"
               style="
                 display: block !important;
                 width: 100% !important;
@@ -299,15 +142,54 @@
             >
           </div>
           <h3>Mi Progreso Académico</h3>
-          <p class="project-description">Aplicación para organizar materias, tareas, notas y fechas de examen durante la Tecnicatura en Ciencia de Datos e Inteligencia Artificial.</p>
+          <p class="project-description">PWA para organizar materias, tareas, notas y exámenes, con buscador, calendario, autenticación con Google y sincronización por usuario mediante Supabase.</p>
           <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#b23a6f" title="#b23a6f"></i><i style="--c:#e88aa8" title="#e88aa8"></i><i style="--c:#fde7ee" title="#fde7ee"></i><i style="--c:#6c2c64" title="#6c2c64"></i></div></div>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span><span>PWA</span></div>
-          <div class="private-project"><span aria-hidden="true">🔒</span> Proyecto privado · Solo vista previa</div>
+          <div class="case-preview"><strong>Qué resuelve</strong><p>Centraliza materias, exámenes y pendientes para consultar el progreso académico sin depender de múltiples planillas o notas.</p></div>
+          <div class="tags"><span>JavaScript</span><span>Supabase</span><span>Google OAuth</span><span>Service Worker</span><span>PWA</span></div>
+          <div class="private-project"><span aria-hidden="true">🔒</span> Proyecto privado · Solo vista previa · <a href="casos-tecnicos.html#progreso">Leer caso técnico ↗</a></div>
         </article>
-
+        <article class="project-card rose">
+          <div class="project-top"><span>03</span><p>Sitio para cliente · Responsive</p></div>
+          <a class="project-visual dv-stage jn-devices" href="https://laschescottas-cyber.github.io/jn-soluciones-integrales/" target="_blank" rel="noopener noreferrer" aria-label="Abrir el sitio de JN Soluciones Integrales">
+            <div class="dv-head" aria-hidden="true"><p class="dv-label">CABA · GBA · Responsive</p></div>
+            <div class="dv-laptop" aria-hidden="true">
+              <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/jn-sitio-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
+              <div class="dv-laptop-base"></div>
+            </div>
+            <div class="dv-phone" aria-hidden="true">
+              <div class="dv-phone-screen"><img src="assets/projects/jn-sitio-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
+            </div>
+          </a>
+          <h3>JN Soluciones Integrales</h3>
+          <p class="project-description">Sitio web institucional desarrollado para un cliente real: una empresa de construcción, refacción y mantenimiento en CABA y GBA. Presenta sus ocho rubros, una galería de obras realizadas, una sección para administradores de consorcios y un formulario que envía cada consulta directo a WhatsApp.</p>
+          <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#13284a" title="#13284a"></i><i style="--c:#c99a2e" title="#c99a2e"></i><i style="--c:#ffffff" title="#ffffff"></i><i style="--c:#25d366" title="#25d366"></i></div></div>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>GitHub Pages</span></div>
+          <div class="project-links"><a href="https://laschescottas-cyber.github.io/jn-soluciones-integrales/" target="_blank" rel="noopener noreferrer">Ver sitio ↗</a><a href="https://github.com/laschescottas-cyber/jn-soluciones-integrales" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div>
+        </article>
+        <article class="project-card wide-case tatech-case">
+          <div class="project-top"><span>04</span><p>Sitio web · SEO local</p></div>
+          <a class="project-visual dv-stage tatech-devices" href="https://laschescottas-cyber.github.io/ta-tech/" target="_blank" rel="noopener noreferrer" aria-label="Abrir el sitio de T&amp;A Tech">
+            <div class="dv-head" aria-hidden="true"><p class="dv-label">PC Builder · Armado y reparación</p></div>
+            <div class="dv-laptop" aria-hidden="true">
+              <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/tatech-sitio-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
+              <div class="dv-laptop-base"></div>
+            </div>
+            <div class="dv-phone" aria-hidden="true">
+              <div class="dv-phone-screen"><img src="assets/projects/tatech-sitio-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
+            </div>
+          </a>
+          <div class="wide-case-copy">
+            <h3>T&amp;A Tech</h3>
+            <p class="wide-case-subtitle">Sitio web para un servicio técnico y armado de PC en GBA y CABA.</p>
+            <p class="project-description">Presenta los servicios de armado a medida, reparación, mantenimiento, upgrades y optimización, junto con un catálogo de equipos y componentes. El formulario de presupuesto arma la consulta con el servicio elegido y la abre directo en WhatsApp. Incluye preguntas frecuentes y SEO local con datos estructurados, sitemap y metadatos para compartir.</p>
+          <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#080d19" title="#080d19"></i><i style="--c:#4cddff" title="#4cddff"></i><i style="--c:#a17cff" title="#a17cff"></i><i style="--c:#56edb0" title="#56edb0"></i></div></div>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>SEO local</span><span>GitHub Pages</span></div>
+            <div class="project-links"><a href="https://laschescottas-cyber.github.io/ta-tech/" target="_blank" rel="noopener noreferrer">Ver sitio ↗</a><a href="https://github.com/laschescottas-cyber/ta-tech" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div>
+          </div>
+        </article>
         <article class="project-card plum">
-          <div class="project-top"><span>03</span><p>Catálogo comercial</p></div>
-          <a class="project-visual dv-stage olivas-devices" href="https://laschescottas-cyber.github.io/olivas-de-la-rioja/" target="_blank" rel="noreferrer" aria-label="Abrir el catálogo Olivas de La Rioja">
+          <div class="project-top"><span>05</span><p>Catálogo comercial</p></div>
+          <a class="project-visual dv-stage olivas-devices" href="https://laschescottas-cyber.github.io/olivas-de-la-rioja/" target="_blank" rel="noopener noreferrer" aria-label="Abrir el catálogo Olivas de La Rioja">
             <div class="dv-head" aria-hidden="true">
               <p class="dv-label">Productos regionales</p>
               <ul class="olivas-thumbs">
@@ -329,69 +211,10 @@
           <p class="project-description">Catálogo online para un emprendimiento de productos regionales riojanos: aceites, aceitunas, frutos secos, dulces y vinos organizados por categoría, con presentaciones y precios, carrito de compra y envío del pedido armado por WhatsApp. Incluye un modo con precios para revendedores.</p>
           <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#111111" title="#111111"></i><i style="--c:#c8a45a" title="#c8a45a"></i><i style="--c:#2f4a33" title="#2f4a33"></i><i style="--c:#f5efe2" title="#f5efe2"></i></div></div>
           <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>WhatsApp</span></div>
-       <div class="project-links"><a href="https://laschescottas-cyber.github.io/olivas-de-la-rioja/" target="_blank" rel="noreferrer">Resultado obtenido ↗</a></div>
-        </article>
-
-        <article class="project-card plum">
-          <div class="project-top"><span>04</span><p>Backend · Automatización</p></div>
-          <a class="project-visual dv-stage chuli-devices" href="https://laschescottas-cyber.github.io/chuli-facturador-demo/demo/" target="_blank" rel="noreferrer" aria-label="Abrir demo visual de Chuli Facturador">
-            <div class="dv-head" aria-hidden="true"><p class="dv-label">Lotes CSV · ARCA · Demo</p></div>
-            <div class="dv-laptop" aria-hidden="true">
-              <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/chuli-demo-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
-              <div class="dv-laptop-base"></div>
-            </div>
-            <div class="dv-phone" aria-hidden="true">
-              <div class="dv-phone-screen"><img src="assets/projects/chuli-demo-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
-            </div>
-          </a>
-          <h3>Chuli Facturador</h3>
-          <p class="project-description">MVP de facturación electrónica que procesa lotes de ventas en CSV, emite Facturas C mediante servicios de ARCA y registra comprobantes, errores y reintentos en SQLite.</p>
-          <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#6c2c64" title="#6c2c64"></i><i style="--c:#c94f73" title="#c94f73"></i><i style="--c:#287a57" title="#287a57"></i><i style="--c:#f4f4f5" title="#f4f4f5"></i></div></div>
-          <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Pandas</span><span>ARCA</span></div>
-          <div class="project-links"><a href="https://laschescottas-cyber.github.io/chuli-facturador-demo/demo/" target="_blank" rel="noreferrer">Ver demo ↗</a></div>
-        </article>
-
-        <article class="project-card rose">
-          <div class="project-top"><span>05</span><p>Sitio para cliente · Responsive</p></div>
-          <a class="project-visual dv-stage jn-devices" href="https://laschescottas-cyber.github.io/jn-soluciones-integrales/" target="_blank" rel="noreferrer" aria-label="Abrir el sitio de JN Soluciones Integrales">
-            <div class="dv-head" aria-hidden="true"><p class="dv-label">CABA · GBA · Responsive</p></div>
-            <div class="dv-laptop" aria-hidden="true">
-              <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/jn-sitio-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
-              <div class="dv-laptop-base"></div>
-            </div>
-            <div class="dv-phone" aria-hidden="true">
-              <div class="dv-phone-screen"><img src="assets/projects/jn-sitio-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
-            </div>
-          </a>
-          <h3>JN Soluciones Integrales</h3>
-          <p class="project-description">Sitio web institucional desarrollado para un cliente real: una empresa de construcción, refacción y mantenimiento en CABA y GBA. Presenta sus ocho rubros, una galería de obras realizadas, una sección para administradores de consorcios y un formulario que envía cada consulta directo a WhatsApp.</p>
-          <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#13284a" title="#13284a"></i><i style="--c:#c99a2e" title="#c99a2e"></i><i style="--c:#ffffff" title="#ffffff"></i><i style="--c:#25d366" title="#25d366"></i></div></div>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>GitHub Pages</span></div>
-          <div class="project-links"><a href="https://laschescottas-cyber.github.io/jn-soluciones-integrales/" target="_blank" rel="noreferrer">Ver sitio ↗</a></div>
-        </article>
-        <article class="project-card wide-case tatech-case">
-          <div class="project-top"><span>06</span><p>Sitio web · SEO local</p></div>
-          <a class="project-visual dv-stage tatech-devices" href="https://laschescottas-cyber.github.io/ta-tech/" target="_blank" rel="noreferrer" aria-label="Abrir el sitio de T&amp;A Tech">
-            <div class="dv-head" aria-hidden="true"><p class="dv-label">PC Builder · Armado y reparación</p></div>
-            <div class="dv-laptop" aria-hidden="true">
-              <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/tatech-sitio-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
-              <div class="dv-laptop-base"></div>
-            </div>
-            <div class="dv-phone" aria-hidden="true">
-              <div class="dv-phone-screen"><img src="assets/projects/tatech-sitio-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
-            </div>
-          </a>
-          <div class="wide-case-copy">
-            <h3>T&amp;A Tech</h3>
-            <p class="wide-case-subtitle">Sitio web para un servicio técnico y armado de PC en GBA y CABA.</p>
-            <p class="project-description">Presenta los servicios de armado a medida, reparación, mantenimiento, upgrades y optimización, junto con un catálogo de equipos y componentes. El formulario de presupuesto arma la consulta con el servicio elegido y la abre directo en WhatsApp. Incluye preguntas frecuentes y SEO local con datos estructurados, sitemap y metadatos para compartir.</p>
-          <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#080d19" title="#080d19"></i><i style="--c:#4cddff" title="#4cddff"></i><i style="--c:#a17cff" title="#a17cff"></i><i style="--c:#56edb0" title="#56edb0"></i></div></div>
-            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>SEO local</span><span>GitHub Pages</span></div>
-            <div class="project-links"><a href="https://laschescottas-cyber.github.io/ta-tech/" target="_blank" rel="noreferrer">Ver sitio ↗</a></div>
-          </div>
+       <div class="project-links"><a href="https://laschescottas-cyber.github.io/olivas-de-la-rioja/" target="_blank" rel="noopener noreferrer">Ver catálogo ↗</a><a href="https://github.com/laschescottas-cyber/olivas-de-la-rioja" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div>
         </article>
         <article class="project-card wide-case wide-reverse pollo-case">
-          <div class="project-top"><span>07</span><p>Tienda online · Pedidos</p></div>
+          <div class="project-top"><span>06</span><p>Tienda online · Pedidos</p></div>
           <div class="project-visual dv-stage pollo-devices" aria-label="Capturas de la tienda Pollo Gourmet Granja">
             <div class="dv-head" aria-hidden="true"><p class="dv-label">2 sucursales · 61 productos</p></div>
             <div class="dv-laptop" aria-hidden="true">
@@ -408,39 +231,260 @@
             <p class="project-description">El cliente elige la sucursal, recorre un catálogo de 61 productos con filtros por categoría y buscador, define la cantidad en kilos y arma su pedido. El carrito calcula el total cuando hay precio cargado y envía el pedido completo por WhatsApp a la sucursal elegida. Incluye precios destacados e ilustraciones propias para cada tipo de producto.</p>
             <div class="brand-palette" aria-label="Paleta de la marca"><span>Paleta de la marca</span><div><i style="--c:#ff7a00" title="#ff7a00"></i><i style="--c:#141414" title="#141414"></i><i style="--c:#ffe8d2" title="#ffe8d2"></i><i style="--c:#1f9f52" title="#1f9f52"></i></div></div>
             <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>Ilustración SVG</span><span>WhatsApp</span></div>
-            <div class="private-project">Proyecto privado · En desarrollo</div>
+            <div class="private-project">Proyecto privado · En desarrollo · <a href="casos-tecnicos.html#pollo">Qué resuelve ↗</a></div>
+          </div>
+        </article>
+        <article class="project-card rose abriguemos-case-study">
+          <div class="project-top"><span>07</span><p>Branding · Identidad visual · Diseño editorial</p></div>
+          <a class="project-visual abriguemos-devices" href="abriguemos-identidad-visual.html" aria-label="Abrir el caso de estudio de identidad visual de Abriguemos a un Niño">
+            <div class="abriguemos-device-glow" aria-hidden="true"></div>
+            <div class="abriguemos-tablet" aria-hidden="true">
+              <div class="abriguemos-tablet-camera"></div>
+              <div class="abriguemos-tablet-screen">
+                <img src="assets/projects/abriguemos-mockup-tablet-isotipo.webp" alt="" width="1600" height="900" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="abriguemos-phone" aria-hidden="true">
+              <div class="abriguemos-phone-speaker"></div>
+              <div class="abriguemos-phone-screen">
+                <img src="assets/projects/abriguemos-mockup-phone-historia.webp" alt="" width="640" height="1195" loading="lazy" decoding="async">
+              </div>
+              <div class="abriguemos-phone-home"></div>
+            </div>
+            <span class="abriguemos-devices-caption">MANUAL DE IDENTIDAD VISUAL · PÁGS. 15 Y 32</span>
+          </a>
+          <div class="abriguemos-case-study-copy">
+            <p class="abriguemos-eyebrow">CASO DE ESTUDIO · IFTS N.º 12</p>
+            <h3>Abriguemos a un Niño</h3>
+            <p class="abriguemos-subtitle">Identidad visual y sistema gráfico para una propuesta de comunicación solidaria.</p>
+            <p class="project-description">Proyecto académico grupal para un Tejetón Solidario: cuadrados tejidos y donación de ovillos destinados a confeccionar mantas. Mi aporte fue el desarrollo y diseño del Manual de Identidad Visual —un documento de 40 páginas—, sus aplicaciones y la coordinación gráfica de la propuesta.</p>
+            <div class="tags"><span>Branding</span><span>Identidad visual</span><span>Manual de marca</span><span>Diseño editorial</span></div>
+            <a class="button primary abriguemos-case-button" href="abriguemos-identidad-visual.html">Ver caso de estudio ↗</a>
+            <div class="private-project">Proyecto académico grupal, no oficial · Participación centrada en la identidad visual</div>
+          </div>
+          <div class="abriguemos-manual-gallery">
+            <div class="abriguemos-gallery-head">
+              <p class="abriguemos-eyebrow">EL MANUAL POR DENTRO</p>
+              <h4>40 páginas · 6 capítulos</h4>
+              <p>Fundamento, sistema de marca, color y tipografía, universo gráfico, aplicaciones y validación. Una selección de páginas reales del documento.</p>
+            </div>
+            <ol class="abriguemos-gallery-grid">
+              <li class="abriguemos-page is-feature">
+                <a href="assets/projects/abriguemos-manual-p01-portada-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Pág. 01 · Portada">
+                  <img src="assets/projects/abriguemos-manual-p01-portada-800.webp" srcset="assets/projects/abriguemos-manual-p01-portada-800.webp 800w, assets/projects/abriguemos-manual-p01-portada-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 60vw" width="1600" height="900" alt="Portada del Manual de Identidad Visual, edición 2026" loading="lazy" decoding="async">
+                </a>
+                <p><span>01</span>Portada</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p10-logo-principal-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Pág. 10 · Logo principal">
+                  <img src="assets/projects/abriguemos-manual-p10-logo-principal-800.webp" srcset="assets/projects/abriguemos-manual-p10-logo-principal-800.webp 800w, assets/projects/abriguemos-manual-p10-logo-principal-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: logo principal, isotipo de corazón tejido y nombre" loading="lazy" decoding="async">
+                </a>
+                <p><span>10</span>Logo principal</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p11-construccion-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Pág. 11 · Construcción de marca">
+                  <img src="assets/projects/abriguemos-manual-p11-construccion-800.webp" srcset="assets/projects/abriguemos-manual-p11-construccion-800.webp 800w, assets/projects/abriguemos-manual-p11-construccion-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: construcción del isotipo sobre retícula modular" loading="lazy" decoding="async">
+                </a>
+                <p><span>11</span>Construcción de marca</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p21-paleta-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Pág. 21 · Paleta cromática">
+                  <img src="assets/projects/abriguemos-manual-p21-paleta-800.webp" srcset="assets/projects/abriguemos-manual-p21-paleta-800.webp 800w, assets/projects/abriguemos-manual-p21-paleta-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: paleta de color con valores HEX, RGB y CMYK" loading="lazy" decoding="async">
+                </a>
+                <p><span>21</span>Paleta cromática</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p23-tipografias-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Pág. 23 · Tipografías">
+                  <img src="assets/projects/abriguemos-manual-p23-tipografias-800.webp" srcset="assets/projects/abriguemos-manual-p23-tipografias-800.webp 800w, assets/projects/abriguemos-manual-p23-tipografias-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: familias tipográficas y sus usos" loading="lazy" decoding="async">
+                </a>
+                <p><span>23</span>Tipografías</p>
+              </li>
+              <li class="abriguemos-page">
+                <a href="assets/projects/abriguemos-manual-p32-aplicaciones-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Pág. 32 · Aplicaciones de marca">
+                  <img src="assets/projects/abriguemos-manual-p32-aplicaciones-800.webp" srcset="assets/projects/abriguemos-manual-p32-aplicaciones-800.webp 800w, assets/projects/abriguemos-manual-p32-aplicaciones-1600.webp 1600w" sizes="(max-width: 640px) 82vw, 30vw" width="1600" height="900" alt="Página del manual: aplicaciones digitales en historias, publicaciones y foto de perfil" loading="lazy" decoding="async">
+                </a>
+                <p><span>32</span>Aplicaciones de marca</p>
+              </li>
+            </ol>
           </div>
         </article>
       </div>
+      <div class="section-cta">
+        <a class="button secondary" href="casos-tecnicos.html">Explorar casos de estudio técnicos ↗</a>
+        <a class="button secondary" href="https://github.com/laschescottas-cyber" target="_blank" rel="noopener noreferrer">Explorar GitHub ↗</a>
+      </div>
     </section>
 
+    <section class="own-products section" id="productos-propios">
+      <div class="section-heading products-heading">
+        <div><p class="section-kicker">02 · Emprendimiento digital</p><h2>Productos digitales <em>propios</em></h2></div>
+        <p>En TuPlannersNC diseño, desarrollo, publico y comercializo aplicaciones para la organización, el estudio y el bienestar.</p>
+      </div>
+
+      <article class="brand-intro brand-web">
+        <a class="project-visual dv-stage tuplanners-devices" href="https://www.tuplannersnc.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la tienda TuPlannersNC">
+          <div class="dv-head" aria-hidden="true"><p class="dv-label">www.tuplannersnc.com.ar</p></div>
+          <div class="dv-laptop" aria-hidden="true">
+            <div class="dv-laptop-lid"><div class="dv-laptop-screen"><img src="assets/projects/tuplanners-web-escritorio.webp" alt="" width="1280" height="800" loading="lazy" decoding="async"></div></div>
+            <div class="dv-laptop-base"></div>
+          </div>
+          <div class="dv-phone" aria-hidden="true">
+            <div class="dv-phone-screen"><img src="assets/projects/tuplanners-web-celular.webp" alt="" width="540" height="1169" loading="lazy" decoding="async"></div>
+          </div>
+        </a>
+        <div class="brand-web-copy">
+          <p class="brand-label">Marca y plataforma digital</p>
+          <h3>TuPlannersNC<span>.</span></h3>
+          <p>Una línea de productos creados de principio a fin: desde la definición de la experiencia y el diseño de interfaz hasta la programación, la gestión de accesos, la publicación y el soporte a compradores.</p>
+          <p>También diseñé y desarrollé la tienda: catálogo de productos con precios promocionales y renovaciones, compra directa por WhatsApp, testimonios, preguntas frecuentes y SEO con datos estructurados, adaptada a computadora, tablet y celular.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>SEO</span><span>Vercel</span></div>
+          <div class="brand-actions">
+            <a class="button primary" href="https://www.tuplannersnc.com.ar/" target="_blank" rel="noopener noreferrer">Visitar tienda ↗</a>
+            <a class="text-link" href="https://www.instagram.com/tuplannersnc" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="agenda-feature">
+        <a class="agenda-stage" href="assets/projects/agenda2027-v2-p01-portada-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Portada" aria-label="Ver la portada de la Agenda Interactiva 2027">
+          <div class="agenda-tablet agenda-tablet-back" aria-hidden="true"><div class="agenda-tablet-screen"><img src="assets/projects/agenda2027-v2-p07-calendario-anual-800.webp" srcset="assets/projects/agenda2027-v2-p07-calendario-anual-800.webp 800w, assets/projects/agenda2027-v2-p07-calendario-anual-1600.webp 1600w" sizes="30vw" width="1600" height="1131" alt="" loading="lazy" decoding="async"></div></div>
+          <div class="agenda-tablet agenda-tablet-front"><div class="agenda-tablet-screen"><img src="assets/projects/agenda2027-v2-p01-portada-800.webp" srcset="assets/projects/agenda2027-v2-p01-portada-800.webp 800w, assets/projects/agenda2027-v2-p01-portada-1600.webp 1600w" sizes="(max-width: 900px) 80vw, 40vw" width="1600" height="1131" alt="Portada de la Agenda Interactiva 2027: collage pastel con pinceladas, papeles y corazones" loading="lazy" decoding="async"></div></div>
+          <span class="agenda-pen" aria-hidden="true"></span>
+        </a>
+        <div class="agenda-copy">
+          <p class="product-type">Planificación · Agenda digital</p>
+          <h3>Agenda Interactiva 2027</h3>
+          <p class="agenda-subtitle">Una agenda anual en PDF que se recorre con un toque, pensada para tablets y apps de anotación.</p>
+          <p>La diseñé y la programé completa: un generador en Python arma automáticamente las 481 páginas a partir de plantillas, y valida cada enlace interno. Desde el calendario anual se entra a cada mes, y desde el mes, a cada día, con accesos al día anterior y siguiente.</p>
+          <ul class="agenda-stats">
+            <li><strong>481</strong><span>páginas</span></li>
+            <li><strong>12</strong><span>carátulas ilustradas</span></li>
+            <li><strong>365</strong><span>páginas diarias</span></li>
+          </ul>
+          <div class="tags"><span>Python</span><span>Jinja2</span><span>WeasyPrint</span><span>PDF interactivo</span><span>Diseño editorial</span><span>Ilustración</span></div>
+          <a class="section-intro-link" href="casos-tecnicos.html#agenda">Conocer el generador de 481 páginas ↗</a>
+        </div>
+        <div class="agenda-gallery" data-lightbox>
+          <p class="agenda-gallery-title">Páginas reales de la agenda</p>
+          <ol>
+              <li>
+                <a href="assets/projects/agenda2027-v2-p04-fechas-importantes-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Fechas importantes">
+                  <img src="assets/projects/agenda2027-v2-p04-fechas-importantes-800.webp" srcset="assets/projects/agenda2027-v2-p04-fechas-importantes-800.webp 800w, assets/projects/agenda2027-v2-p04-fechas-importantes-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Fechas importantes del primer semestre: cumpleaños, aniversarios y eventos" loading="lazy" decoding="async">
+                </a>
+                <p>Fechas importantes</p>
+              </li>
+              <li>
+                <a href="assets/projects/agenda2027-v2-p09-planner-mensual-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Planner mensual">
+                  <img src="assets/projects/agenda2027-v2-p09-planner-mensual-800.webp" srcset="assets/projects/agenda2027-v2-p09-planner-mensual-800.webp 800w, assets/projects/agenda2027-v2-p09-planner-mensual-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Planner mensual de enero: cada día lleva a su página diaria" loading="lazy" decoding="async">
+                </a>
+                <p>Planner mensual</p>
+              </li>
+              <li>
+                <a href="assets/projects/agenda2027-v2-p11-habitos-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Control de hábitos">
+                  <img src="assets/projects/agenda2027-v2-p11-habitos-800.webp" srcset="assets/projects/agenda2027-v2-p11-habitos-800.webp 800w, assets/projects/agenda2027-v2-p11-habitos-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Rueda de hábitos mensual para colorear por día" loading="lazy" decoding="async">
+                </a>
+                <p>Control de hábitos</p>
+              </li>
+              <li>
+                <a href="assets/projects/agenda2027-v2-p12-semana-ideal-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Semana ideal">
+                  <img src="assets/projects/agenda2027-v2-p12-semana-ideal-800.webp" srcset="assets/projects/agenda2027-v2-p12-semana-ideal-800.webp 800w, assets/projects/agenda2027-v2-p12-semana-ideal-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Planificación de la semana ideal con hábitos, humor y prioridades" loading="lazy" decoding="async">
+                </a>
+                <p>Semana ideal</p>
+              </li>
+              <li>
+                <a href="assets/projects/agenda2027-v2-p13-pagina-diaria-1600.webp" target="_blank" rel="noopener noreferrer" data-caption="Página diaria">
+                  <img src="assets/projects/agenda2027-v2-p13-pagina-diaria-800.webp" srcset="assets/projects/agenda2027-v2-p13-pagina-diaria-800.webp 800w, assets/projects/agenda2027-v2-p13-pagina-diaria-1600.webp 1600w" sizes="(max-width: 640px) 70vw, 18vw" width="1600" height="1131" alt="Página diaria con tareas, horarios y accesos al día anterior y siguiente" loading="lazy" decoding="async">
+                </a>
+                <p>Página diaria</p>
+              </li>
+          </ol>
+        </div>
+      </article>
+
+      <div class="product-showcase-grid">
+        <article class="product-showcase-card">
+          <a class="product-image" href="https://www.tuplannersnc.com.ar/#cuaderno-digital" target="_blank" rel="noopener noreferrer" aria-label="Conocer Mi Cuaderno Digital">
+            <img src="assets/projects/mockup-mi-cuaderno-digital-v2.webp" alt="Mi Cuaderno Digital abierto en computadora, tablet y celular" loading="lazy">
+          </a>
+          <p class="product-type">Organización · Estudio</p>
+          <h3>Mi Cuaderno Digital</h3>
+          <p>Aplicación Full Stack para crear cuadernos y apuntes, escribir, dibujar y sincronizar contenidos entre dispositivos con acceso seguro por usuario.</p>
+          <div class="tags"><span>TypeScript</span><span>React</span><span>Next.js</span><span>Supabase</span><span>PWA</span></div>
+          <a class="section-intro-link" href="casos-tecnicos.html#cuaderno">Cómo lo desarrollé ↗</a>
+          <a class="product-link" href="https://www.tuplannersnc.com.ar/#cuaderno-digital" target="_blank" rel="noopener noreferrer">Conocer el producto ↗</a>
+        </article>
+
+        <article class="product-showcase-card">
+          <a class="product-image" href="https://www.tuplannersnc.com.ar/#florecer-ai" target="_blank" rel="noopener noreferrer" aria-label="Conocer Florecer AI">
+            <img src="assets/projects/mockup-florecer-ai.webp" alt="Florecer AI, diario de gratitud digital, abierto en tablet y celular" loading="lazy">
+          </a>
+          <p class="product-type">Bienestar · Inteligencia artificial</p>
+          <h3>Florecer AI</h3>
+          <p>Diario de gratitud digital con un recorrido guiado de 30 días, registro emocional, estadísticas y reflexiones personalizadas con inteligencia artificial.</p>
+          <div class="tags"><span>JavaScript</span><span>IA</span><span>Supabase</span><span>PDF</span></div>
+          <a class="product-link" href="https://www.tuplannersnc.com.ar/#florecer-ai" target="_blank" rel="noopener noreferrer">Conocer el producto ↗</a>
+        </article>
+
+        <article class="product-showcase-card">
+          <a class="product-image" href="https://www.tuplannersnc.com.ar/#catalogo" target="_blank" rel="noopener noreferrer" aria-label="Conocer Planner Anual 2027">
+            <img src="assets/projects/mockup-planner-anual-2026.svg" alt="Planner Anual 2027 instalado en computadora, tablet y celular" loading="lazy">
+          </a>
+          <p class="product-type">Planificación · Productividad</p>
+          <h3>Planner Anual 2027</h3>
+          <p>Aplicación instalable para organizar actividades, objetivos y pendientes de todo el año, con categorías, progreso visual, sincronización y exportaciones.</p>
+          <div class="tags"><span>JavaScript</span><span>PWA</span><span>Supabase</span><span>Responsive</span></div>
+          <a class="product-link" href="https://www.tuplannersnc.com.ar/#catalogo" target="_blank" rel="noopener noreferrer">Conocer el producto ↗</a>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="about section" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="about-wrap">
+        <div>
+          <p class="section-kicker">03 · Mi recorrido</p>
+          <h2 id="titulo-sobre-mi">Más que código:<br><em>resolver problemas</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>Actualmente estudio la Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial en el IFTS N.º 12. Me especializo progresivamente en desarrollo web, Python y automatización, trabajando sobre proyectos concretos.</p>
+          <p>Mi experiencia de más de 17 años en administración y finanzas me ayuda a comprender procesos, detectar necesidades y pensar soluciones prácticas, especialmente para negocios, gestión de información y tareas repetitivas.</p>
+          <p>Busco una oportunidad trainee o junior para seguir aprendiendo en equipo. También desarrollo proyectos web freelance, desde el diseño hasta la publicación.</p>
+          <div class="about-highlights"><span>Desarrollo web</span><span>Python y automatización</span><span>Procesos de negocio</span><span>Datos e IA en formación</span></div>
+          <a class="section-intro-link" href="cv.html">Conocer mi perfil profesional y ver CV ↗</a>
+        </div>
+      </div>
+    </section>
+
+
+
     <section class="skills section" id="habilidades">
-      <div><p class="section-kicker">03 · Herramientas</p><h2>Tecnologías y<br><em>habilidades</em></h2><p class="skills-intro">Mi stack crece con cada proyecto. Estas son las herramientas con las que trabajo y sigo aprendiendo.</p></div>
+      <div><p class="section-kicker">04 · Herramientas</p><h2>Tecnologías y<br><em>habilidades</em></h2><p class="skills-intro">Trabajo con Python, JavaScript, PHP, HTML y CSS en proyectos prácticos. También utilizo bases de datos y herramientas de despliegue, mientras continúo profundizando en datos e inteligencia artificial.</p></div>
       <div class="skill-list"><div><span>01</span><p>Python</p><i>↗</i></div><div><span>02</span><p>JavaScript</p><i>↗</i></div><div><span>03</span><p>PHP</p><i>↗</i></div><div><span>04</span><p>HTML &amp; CSS</p><i>↗</i></div><div><span>05</span><p>SQL</p><i>↗</i></div><div><span>06</span><p>Supabase</p><i>↗</i></div><div><span>07</span><p>FastAPI &amp; Pandas</p><i>↗</i></div><div><span>08</span><p>Git &amp; GitHub</p><i>↗</i></div><div><span>09</span><p>Vercel &amp; GitHub Pages</p><i>↗</i></div><div><span>10</span><p>PWA y diseño responsive</p><i>↗</i></div><div><span>11</span><p>Automatización</p><i>↗</i></div><div><span>12</span><p>Inteligencia Artificial</p><i>↗</i></div></div>
     </section>
 
     <section class="contact section" id="contacto">
-      <p class="section-kicker">04 · Contacto</p><h2>¿Creamos algo<br><em>juntos?</em></h2>
-      <p>Busco oportunidades trainee o junior en desarrollo de software, automatización, datos e inteligencia artificial. También estoy disponible para proyectos web freelance.</p>
+      <p class="section-kicker">05 · Contacto</p><h2>¿Creamos algo<br><em>juntos?</em></h2>
+      <p>Estoy abierta a oportunidades trainee o junior en desarrollo web, automatización y datos, y a proyectos freelance. Podés ver mi perfil profesional o escribirme directamente.</p>
+      <p><a class="button secondary" href="cv.html">Ver CV y guardar en PDF ↗</a></p>
 <div class="contact-links">
   <a href="mailto:laschescottas@gmail.com">Email ↗</a>
 
   <a class="whatsapp-link"
      href="https://wa.me/5491157485571?text=Hola%20Natalia%2C%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte."
      target="_blank"
-     rel="noreferrer">
+     rel="noopener noreferrer">
     WhatsApp ↗
   </a>
 
   <a href="https://github.com/laschescottas-cyber"
      target="_blank"
-     rel="noreferrer">
+     rel="noopener noreferrer">
     GitHub ↗
   </a>
 
   <a href="https://www.linkedin.com/in/natalia-chescotta"
      target="_blank"
-     rel="noreferrer">
+     rel="noopener noreferrer">
     LinkedIn ↗
   </a>
 </div>
