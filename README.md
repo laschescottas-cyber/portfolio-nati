@@ -12,8 +12,10 @@ Mostrar proyectos reales de desarrollo web, automatización y productos digitale
 
 ## Contenido
 
-- **Proyectos:** aplicaciones, automatizaciones y sitios web para negocios.
-- **Productos propios:** TuPlannersNC y herramientas digitales para estudio y organización.
+- **Selección destacada:** entrada rápida a TuPlannersNC, Abriguemos a un Niño y Chuli Facturador.
+- **Productos propios:** TuPlannersNC, herramientas digitales para estudio y una agenda generada en Python.
+- **Identidad visual:** presentación destacada del Manual de Identidad Visual de Abriguemos a un Niño (trabajo académico grupal).
+- **Desarrollo y clientes:** aplicaciones, automatizaciones y sitios web para negocios.
 - **Sobre mí:** formación técnica y experiencia en procesos administrativos y financieros.
 - **Habilidades y contacto:** stack de herramientas, LinkedIn, GitHub y CV imprimible.
 - **Casos técnicos:** desafíos, soluciones y arquitectura de proyectos seleccionados.
