@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casos de estudio técnicos de Natalia Chescotta: Python, FastAPI, Next.js, Supabase, PWA y automatización.">
+  <meta name="theme-color" content="#fffaf9">
+  <link rel="canonical" href="https://laschescottas-cyber.github.io/portfolio-nati/casos-tecnicos.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Casos de estudio técnicos | Natalia Chescotta</title>
+  <link rel="stylesheet" href="styles.css?v=41">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<main id="contenido" class="casepage-wrap">
+  <header class="casepage-header">
+    <a class="brand" href="index.html#inicio" aria-label="Volver al portfolio">NC<span>.</span></a>
+    <a href="index.html#proyectos">← Volver a proyectos</a>
+  </header>
+  <section class="casepage-intro">
+    <p class="section-kicker">Desarrollo web · Backend · Automatización</p>
+    <h1>Cómo construyo <em>soluciones reales</em></h1>
+    <p>Una mirada técnica a proyectos propios, productos digitales y trabajos para negocios. Cada caso explica el problema, mi trabajo y las tecnologías usadas. En algunos proyectos el código es privado para proteger datos y funcionalidades comerciales.</p>
+  </section>
+  <nav class="casepage-nav" aria-label="Ir a un caso de estudio">
+    <a href="#chuli">Chuli Facturador</a>
+    <a href="#cuaderno">Mi Cuaderno Digital</a>
+    <a href="#progreso">Mi Progreso Académico</a>
+    <a href="#agenda">Agenda 2027</a>
+    <a href="#pollo">Pollo Gourmet</a>
+  </nav>
+  <section class="case-detail" id="chuli" aria-labelledby="chuli-title">
+    <div>
+      <p class="section-kicker">01 · Backend y automatización</p>
+      <h2 id="chuli-title">Chuli Facturador</h2>
+      <p class="case-lead">MVP de facturación electrónica por lotes, actualmente en ambiente de homologación.</p>
+      <h3>El desafío</h3>
+      <p>Evitar la carga manual repetitiva de comprobantes y poder identificar ventas procesadas, duplicados y errores.</p>
+      <h3>Cómo lo resolví</h3>
+      <p>Desarrollé un backend en Python y FastAPI que recibe ventas en CSV, prepara Facturas C mediante los servicios de ARCA y registra los movimientos en SQLite. El sistema contempla control de duplicados por número de orden, registro de eventos, errores temporales y reproceso de pendientes.</p>
+      <h3>Lo que demuestra</h3>
+      <ul><li>Procesamiento de datos tabulares con Pandas</li><li>Integración con servicios externos y configuración por entorno</li><li>Validación, trazabilidad y manejo de reintentos</li></ul>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>Pandas</span><span>SQLite</span><span>ARCA</span></div>
+      <div class="project-links"><a href="https://laschescottas-cyber.github.io/chuli-facturador-demo/demo/" target="_blank" rel="noopener noreferrer">Ver demo visual ↗</a><a href="https://github.com/laschescottas-cyber/chuli-facturador-demo" target="_blank" rel="noopener noreferrer">Código de la demo ↗</a></div>
+      <p class="case-note">La demo pública no contiene las credenciales ni el backend privado de facturación.</p>
+    </div>
+    <img src="assets/projects/chuli-demo-escritorio.webp" alt="Interfaz de escritorio de la demostración visual de Chuli Facturador" width="1280" height="800" loading="lazy" decoding="async">
+  </section>
+  <section class="case-detail" id="cuaderno" aria-labelledby="cuaderno-title">
+    <div>
+      <p class="section-kicker">02 · Aplicación Full Stack</p>
+      <h2 id="cuaderno-title">Mi Cuaderno Digital</h2>
+      <p class="case-lead">Cuadernos personalizados, edición de páginas y sincronización por cuenta.</p>
+      <h3>El desafío</h3>
+      <p>Ofrecer una herramienta de estudio que funcione en computadora, tablet y celular, con diferentes formatos de hojas, imágenes y escritura.</p>
+      <h3>Cómo lo construí</h3>
+      <p>La aplicación utiliza React, Next.js y TypeScript. Para autenticación, datos e imágenes usa Supabase (PostgreSQL y Storage), con políticas RLS para separar la información de cada usuario. Incluye herramientas de edición, búsqueda de apuntes, exportación en PDF y una experiencia instalable como PWA.</p>
+      <h3>Aspectos técnicos</h3>
+      <ul><li>Componentes de interfaz y edición de contenido</li><li>Autenticación y permisos por usuario</li><li>Sincronización y respaldo local ante interrupciones de conexión</li></ul>
+      <div class="tags"><span>TypeScript</span><span>React</span><span>Next.js</span><span>Supabase</span><span>PostgreSQL</span><span>PWA</span></div>
+      <div class="project-links"><a href="https://www.tuplannersnc.com.ar/#cuaderno-digital" target="_blank" rel="noopener noreferrer">Conocer el producto ↗</a></div>
+      <p class="case-note">Repositorio privado: los cuadernos de usuarios, accesos y configuraciones sensibles no se exponen en esta muestra.</p>
+    </div>
+    <img src="assets/projects/mockup-mi-cuaderno-digital-v2.webp" alt="Mi Cuaderno Digital en varios dispositivos" loading="lazy" decoding="async">
+  </section>
+  <section class="case-detail" id="progreso" aria-labelledby="progreso-title">
+    <div>
+      <p class="section-kicker">03 · PWA y gestión académica</p>
+      <h2 id="progreso-title">Mi Progreso Académico</h2>
+      <p class="case-lead">Organización de materias, tareas y exámenes en una sola aplicación.</p>
+      <h3>El desafío</h3>
+      <p>Reunir información académica que suele quedar dispersa entre calendarios, apuntes, mensajes y planillas.</p>
+      <h3>Cómo lo construí</h3>
+      <p>Creé una aplicación web con JavaScript que permite registrar materias, cursadas, tareas, evaluaciones y notas, con buscador global y calendario. Integra Google OAuth y Supabase para autorización y sincronización de datos por usuario. Incluye manifest y Service Worker para instalación como PWA y soporte offline básico.</p>
+      <h3>Aspectos técnicos</h3>
+      <ul><li>Autenticación y datos asociados a cada cuenta</li><li>Filtros, búsqueda, vistas de calendario y exportación</li><li>Diseño responsive y funcionamiento instalable</li></ul>
+      <div class="tags"><span>JavaScript</span><span>Supabase</span><span>Google OAuth</span><span>PWA</span><span>Service Worker</span></div>
+      <p class="case-note">El acceso a la aplicación es privado y requiere autorización. Se muestran capturas, no información académica personal.</p>
+    </div>
+    <img src="assets/projects/progreso-mockup.png" alt="Vista previa de Mi Progreso Académico en distintos dispositivos" loading="lazy" decoding="async">
+  </section>
+  <section class="case-detail" id="agenda" aria-labelledby="agenda-title">
+    <div>
+      <p class="section-kicker">04 · Generación automatizada</p>
+      <h2 id="agenda-title">Agenda Interactiva 2027</h2>
+      <p class="case-lead">Un generador en Python produce un documento de 481 páginas enlazadas.</p>
+      <h3>El desafío</h3>
+      <p>Construir una agenda extensa con navegación coherente sin diseñar manualmente cientos de páginas y vínculos.</p>
+      <h3>Cómo lo resolví</h3>
+      <p>Programé un generador con Python, Jinja2 y WeasyPrint. A partir de plantillas, construye vistas anuales, mensuales y diarias, con enlaces para navegar entre ellas. Se puede generar una muestra breve, validar la navegación y elegir versiones optimizadas para pantalla o impresión.</p>
+      <h3>Datos del proyecto</h3>
+      <ul><li>481 páginas generadas</li><li>365 páginas diarias y 12 carátulas mensuales</li><li>Pruebas del generador y verificación de enlaces internos</li></ul>
+      <div class="tags"><span>Python</span><span>Jinja2</span><span>WeasyPrint</span><span>PDF</span><span>Automatización</span></div>
+      <p class="case-note">Es un PDF navegable para aplicaciones de anotación; los espacios de escritura no son campos de formulario AcroForm.</p>
+    </div>
+    <img src="assets/projects/agenda2027-v2-p09-planner-mensual-1600.webp" alt="Página del planner mensual generado mediante Python" width="1600" height="1131" loading="lazy" decoding="async">
+  </section>
+  <section class="case-detail" id="pollo" aria-labelledby="pollo-title">
+    <div>
+      <p class="section-kicker">05 · Desarrollo para un negocio</p>
+      <h2 id="pollo-title">Pollo Gourmet Granja</h2>
+      <p class="case-lead">Catálogo de pedidos para dos sucursales, en desarrollo.</p>
+      <h3>El desafío</h3>
+      <p>Facilitar la selección de productos, cantidades y sucursal antes de enviar una consulta, evitando pedidos incompletos por mensaje.</p>
+      <h3>La solución</h3>
+      <p>Diseñé una tienda responsive con selección de sucursal, categorías, buscador y carrito. La página prepara un pedido organizado con productos y cantidades para enviarlo por WhatsApp a la sucursal seleccionada. El catálogo mostrado en el portfolio contempla 61 productos.</p>
+      <h3>Enfoque técnico</h3>
+      <ul><li>Experiencia móvil y proceso de pedido claro</li><li>Validación de cantidad, elección de sucursal y armado del mensaje</li><li>Catálogo y componentes visuales reutilizables</li></ul>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>WhatsApp</span></div>
+      <p class="case-note">Proyecto privado en desarrollo; las imágenes son una vista previa y no confirman disponibilidad comercial.</p>
+    </div>
+    <img src="assets/projects/pollo-gourmet-escritorio.webp" alt="Vista del catálogo Pollo Gourmet Granja" width="1280" height="800" loading="lazy" decoding="async">
+  </section>
+  <footer class="casepage-footer">© 2026 Natalia Chescotta · <a href="index.html#contacto">Contactarme</a> · <a href="index.html#proyectos">Volver al portfolio</a></footer>
+</main>
+</body>
+</html>
