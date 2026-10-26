@@ -1426,3 +1426,15 @@ footer { width: 100%; max-width: none; margin: 0; padding: 28px clamp(28px, 6vw,
 @media (max-width: 680px) {
   .brand-intro.brand-web { padding: 19px; }
 }
+
+/* Tarjeta ancha invertida (texto a la izquierda) y Pollo Gourmet */
+@media (min-width: 901px) {
+  .project-card.wide-reverse { grid-template-columns: minmax(300px, .86fr) minmax(0, 1.14fr); }
+  .wide-reverse .project-visual { grid-column: 2; }
+  .wide-reverse .wide-case-copy { grid-column: 1; }
+}
+.project-visual.pollo-devices { aspect-ratio: 16 / 11; }
+.pollo-devices .dv-laptop { left: 7%; top: 19%; width: 73%; }
+.pollo-devices .dv-laptop-screen, .pollo-devices .dv-phone-screen { background: #fff; }
+.pollo-devices .dv-phone { right: 6%; bottom: 7%; width: 21%; }
+.wide-case .private-project { margin-top: 18px; }
