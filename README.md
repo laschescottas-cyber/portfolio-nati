@@ -27,7 +27,7 @@ Mostrar proyectos reales de desarrollo web, automatización y productos digitale
 | Chuli Facturador | Python, FastAPI, SQLite, Pandas | [Demo pública](https://laschescottas-cyber.github.io/chuli-facturador-demo/demo/) |
 | Mi Cuaderno Digital | React, Next.js, TypeScript, Supabase | [Producto](https://www.tuplannersnc.com.ar/#cuaderno-digital) |
 | Mi Progreso Académico | JavaScript, Supabase, PWA | Acceso privado |
-| Agenda Interactiva 2027 | Python, Jinja2, WeasyPrint | [Caso técnico](https://laschescottas-cyber.github.io/portfolio-nati/casos-tecnicos.html#agenda) |
+| Agenda Interactiva 2027 | HTML, Python, PyMuPDF, Playwright | [Caso técnico](https://laschescottas-cyber.github.io/portfolio-nati/casos-tecnicos.html#agenda) |
 | JN Soluciones Integrales | HTML, CSS, JavaScript | [Sitio](https://laschescottas-cyber.github.io/jn-soluciones-integrales/) |
 | T&A Tech | HTML, CSS, JavaScript | [Sitio](https://laschescottas-cyber.github.io/ta-tech/) |
 

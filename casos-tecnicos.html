@@ -83,17 +83,17 @@
     <div>
       <p class="section-kicker">04 · Generación automatizada</p>
       <h2 id="agenda-title">Agenda Interactiva 2027</h2>
-      <p class="case-lead">Un generador en Python produce un documento de 481 páginas enlazadas.</p>
+      <p class="case-lead">Una agenda hecha en HTML, convertida por código en un PDF vertical de 500 páginas enlazadas.</p>
       <h3>El desafío</h3>
-      <p>Construir una agenda extensa con navegación coherente sin diseñar manualmente cientos de páginas y vínculos.</p>
+      <p>Pasar una agenda de 250 dobles páginas horizontales a un formato vertical que se use bien en tablet, computadora y celular, sin perder contenido ni ninguno de sus miles de enlaces, y con un único archivo para que las anotaciones se sincronicen entre dispositivos.</p>
       <h3>Cómo lo resolví</h3>
-      <p>Programé un generador con Python, Jinja2 y WeasyPrint. A partir de plantillas, construye vistas anuales, mensuales y diarias, con enlaces para navegar entre ellas. Se puede generar una muestra breve, validar la navegación y elegir versiones optimizadas para pantalla o impresión.</p>
+      <p>La agenda está maquetada en HTML y CSS y se imprime con Chrome mediante Playwright. Un conversor en Python con PyMuPDF separa cada doble página en dos hojas verticales usando el contenido original del PDF, sin convertirlo en imagen, dibuja pestañas laterales para los meses y las secciones, y recalcula cada enlace: un día del calendario lleva a la mitad exacta de la semana donde está. Antes de imprimir, un script reparte el contenido de las hojas que quedaban con espacio libre y vuelve a dibujar renglones y cuadrículas con el tamaño final.</p>
       <h3>Datos del proyecto</h3>
-      <ul><li>481 páginas generadas</li><li>365 páginas diarias y 12 carátulas mensuales</li><li>Pruebas del generador y verificación de enlaces internos</li></ul>
-      <div class="tags"><span>Python</span><span>Jinja2</span><span>WeasyPrint</span><span>PDF</span><span>Automatización</span></div>
+      <ul><li>500 páginas verticales a partir de 250 dobles páginas</li><li>14.547 enlaces internos verificados, ninguno roto</li><li>Un solo archivo para tablet, computadora y celular</li><li>Revisión automática de bordes y del espacio libre en cada hoja</li></ul>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>PyMuPDF</span><span>Playwright</span><span>PDF</span></div>
       <p class="case-note">Es un PDF navegable para aplicaciones de anotación; los espacios de escritura no son campos de formulario AcroForm.</p>
     </div>
-    <img src="assets/projects/agenda2027-v2-p09-planner-mensual-1600.webp" alt="Página del planner mensual generado mediante Python" width="1600" height="1131" loading="lazy" decoding="async">
+    <img src="assets/projects/agenda2027-v3-dispositivos.webp" alt="La Agenda Interactiva 2027 abierta en una computadora, una tablet y un celular" width="1448" height="1086" loading="lazy" decoding="async">
   </section>
   <section class="case-detail" id="pollo" aria-labelledby="pollo-title">
     <div>
